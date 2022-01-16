@@ -8753,7 +8753,7 @@ section {
   .header-top .desktop-logo img {
     max-width: 100%;
   }
-  .logo {
+  #logo {
     width: 300px;
   }
   @media (max-width: 991px) {
