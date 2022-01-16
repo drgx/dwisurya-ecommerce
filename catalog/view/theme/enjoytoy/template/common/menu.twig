@@ -14,12 +14,23 @@
                       <i class="fa fa-angle-up remove"></i>
                     </span>
                 </span>
-                <div id="top_sub_menu_{{temprand}}" class="dropdown-menu popover sub-menu collapse">
+
+                <div id="top_sub_menu_{{temprand}}" class="dropdown-inner collapse">
+                    <ul class="list-unstyled childs_2 top-menu" data-depth="2">
+                    {% for manufacture in manufactures %}
+                      <li class="category">
+                        <a class="dropdown-item" href="{{ manufacture.href }}">{{ manufacture.name }}</a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                </div>
+
+                {# <div id="top_sub_menu_{{temprand}}" class="dropdown-menu popover sub-menu collapse">
                     <ul class="list-unstyled childs_1 category_dropdownmenu multiple-dropdown-menu" data-depth="1">
                         {% set temprand2 = random(10000) %}
                         <li class="category dropdown sub-category">
 
-                          {# <a class="dropdown-item dropdown-submenu" href="/?route=product/manufacturer">Brand</a> #}
+
                           <span class="pull-xs-right hidden-md hidden-lg">
                               <span data-target="#top_sub_menu_{{temprand2}}" data-toggle="collapse" class="navbar-toggler collapse-icons">
                                 <i class="fa fa-angle-down add"></i>
@@ -37,7 +48,7 @@
                           </div>
                         </li>
                     </ul>
-                </div>
+                </div> #}
               </li>
             {% endif %}
 
