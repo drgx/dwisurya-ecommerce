@@ -11,6 +11,7 @@ class ControllerCommonMenu extends Controller {
 
 
 		$data['categories'] = array();
+		$data['manufactures'] = array();
 
 
 		$data['home'] = $this->url->link('common/home');
