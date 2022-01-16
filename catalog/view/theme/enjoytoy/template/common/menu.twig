@@ -9,7 +9,7 @@
                 <a class="dropdown-item" href="/?route=product/manufacturer">Brand
                 </a>
                 <span class="pull-xs-right hidden-md hidden-lg">
-                    <span data-target="#top_sub_menu_{{temprand2}}" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                    <span data-target="#top_sub_menu_{{temprand}}" data-toggle="collapse" class="navbar-toggler collapse-icons">
                       <i class="fa fa-angle-down add"></i>
                       <i class="fa fa-angle-up remove"></i>
                     </span>
@@ -26,8 +26,7 @@
                                 <i class="fa fa-angle-up remove"></i>
                               </span>
                           </span>
-                          {% set temprand2 = random(10000) %}
-                          <div id="top_sub_menu_{{temprand2}}" class="dropdown-inner collapse">
+                          <div id="top_sub_menu_{{temprand}}" class="dropdown-inner collapse">
                               <ul class="list-unstyled childs_2 top-menu" data-depth="2">
                               {% for manufacture in manufactures %}
                                 <li class="category">
