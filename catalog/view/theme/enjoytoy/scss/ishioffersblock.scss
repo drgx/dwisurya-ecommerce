@@ -1,0 +1,20 @@
+#ishioffersblock{
+	text-align: left;
+	padding:10px 0 5px;
+	.offer-img{
+		display:inline-block;
+		vertical-align: middle;
+		width: 26px;
+		height: 26px;
+		fill:$header-top-text-color;
+	}
+	#typed{
+		display: inline-block;
+		vertical-align: middle;
+		color: $header-top-text-color;
+		margin-left: 5px;
+	    font-size: 14px;
+	    letter-spacing: 0.1px;
+	    line-height: 20px;
+	}
+}

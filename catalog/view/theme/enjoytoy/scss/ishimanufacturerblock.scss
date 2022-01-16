@@ -1,0 +1,30 @@
+.manufacturerblock {
+	.home-title {
+		display: none;
+	}
+	.item {
+		text-align: center;
+		a{
+			opacity: 1;
+		    cursor: pointer;
+		    display: inline-block;
+		    vertical-align: middle;
+		    -webkit-transition: all .4s;
+		    -moz-transition: all .4s;
+		    -o-transition: all .4s;
+		    transition: all .4s;
+		}
+		img {
+			-webkit-transition: all .4s;
+		    -moz-transition: all .4s;
+		    -o-transition: all .4s;
+		    transition: all .4s;
+		}
+		&:hover {
+			img {
+				transform: scale(.9);
+			    opacity: 1;
+			}
+		}
+	}
+}

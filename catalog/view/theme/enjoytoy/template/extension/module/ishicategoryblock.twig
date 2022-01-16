@@ -1,0 +1,50 @@
+<section id="{{ ishi_randomnumer }}" class="ishicategoryblock">
+    <div class="container">
+        <div class="subtitle">{{ subtitle }}</div>
+        <h3 class="home-title">{{ heading }}</h3>
+        <div class="ishicategory owl-carousel">
+          {% for banner in banners %}  
+          <div class="item">
+              <a href="{{ banner.link }}">
+                <div class="image-container">
+                  <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
+                </div>
+                <div class="text-container btn-primary" style="color: {{banner.titlecolor}}; background: {{banner.titlebgcolor}}">
+                  <span>{{ banner.title }}</span>
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </div>
+              </a>
+              
+          </div>   
+          {% endfor %} 
+        </div>
+    </div>
+  <script type="text/javascript">
+    $('#{{ ishi_randomnumer }} .owl-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        dots:false,
+        margin: 30,
+        rtl: $('html').attr('dir') == 'rtl'? true : false,    
+        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+        rewind: true,
+        responsive:{
+            0: {
+              items: 2
+            },
+            544: {
+              items: 2
+            },
+            768: {
+              items: 3
+            },
+            992: {
+              items: 4
+            },
+            1200: {
+              items: 5
+            }
+        }
+    });
+  </script>
+</section>

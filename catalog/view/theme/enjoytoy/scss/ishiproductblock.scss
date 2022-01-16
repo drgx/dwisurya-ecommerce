@@ -1,0 +1,87 @@
+/* Ishi ProductBlock */
+.ishiproductsblock {
+  text-align: center;
+  .ishiproductstab{
+    position: relative;
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    @media (max-width: 767px) {/* If media is below 768 */
+      margin-bottom: 10px;
+    }
+    .nav-item { 
+      &:last-child{
+        @media (max-width:380px) {/* If media is below 544 */
+          margin-bottom:0px;
+        }
+      }
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px 10px;
+      float: none;
+      @media (max-width:380px) {/* If media is below 544 */
+        display:block;
+        text-align:center;
+      }
+      .nav-link{
+        @media (max-width: 543px) {/* If media is below 768 */
+          padding: 7px 10px;
+        }
+        background:#f5f5f5;
+        border-radius:20px;
+        border:3px solid $light-color;
+        display: inline-block;
+        color: #666666;
+        box-shadow:0 0 17px 0 rgba(0,0,0,0.1);
+        font-weight:500;
+        margin:0;
+        font-size: 15px;
+        letter-spacing: 0.42px;
+        outline: medium none;
+        padding: 10px 22px;
+        line-height: 1.1;
+        position: relative;
+        transition: all 400ms ease-in-out 0s;
+        -webkit-transition: all 400ms ease-in-out 0s;
+        -moz-transition: all 400ms ease-in-out 0s;
+        -o-transition: all 400ms ease-in-out 0s;
+        &.active{
+          color: $light-color;
+          background: $brand-secondary;
+        }
+      }
+      &:last-child{
+        .nav-link{
+          &:after{
+            display: none;
+          }
+        }
+      }
+      &.active {
+        .nav-link{
+          color: $light-color;
+          background: $brand-secondary;
+        }
+      }
+    } 
+  }
+  .tab-content {
+    padding: 0;
+    margin-top: 10px; 
+    @media (max-width: 543px) {
+      padding: 0 5px;
+    }   
+  }
+  .owl-carousel {
+    .owl-nav {
+      @media (max-width: 543px) {
+        margin-top: 10px;
+      }
+      .owl-prev, .owl-next {
+        position: unset;
+        margin-top: 0;
+      }
+    }
+  }
+}

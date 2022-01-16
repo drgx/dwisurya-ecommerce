@@ -1,0 +1,145 @@
+.ishistoryblock{
+	position: relative;
+	@media(max-width: 991px){
+		margin-bottom: 30px !important;
+	}
+	.row{
+		display: flex;
+		align-items: center;
+		@media(max-width:767px){
+			display: block;
+		}
+		&.left{
+			.story-image{
+				order: 1;
+			}
+			.text-wrapper{
+				order: 2; 
+			}			
+		}
+		&.right{
+			.story-image{
+				order: 2;
+			}
+			.text-wrapper{
+				order: 1; 
+			}		
+		}
+	}
+	.story-image{
+		.image-border{
+			padding: 5px;
+		    margin: 5px;
+		    border-radius: 8px;
+		    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+		    &:hover{
+	    	    .img-container{
+	    	    	img{
+	    	    		transform: scale(1.1);
+					    -webkit-transform: scale(1.1);
+					    -ms-transform: scale(1.1);
+					    -o-transform: scale(1.1);
+					    -moz-transform: scale(1.1);
+	    	    	}
+	    	    }
+		    }
+			.img-container{
+				position: relative;
+				overflow: hidden;
+				a{
+					img{
+						max-width: 100%;
+						width:100%;
+						position: relative;
+					    transform: scale(1);
+					    -webkit-transform: scale(1);
+					    -ms-transform: scale(1);
+					    -o-transform: scale(1);
+					    -moz-transform: scale(1);
+					    transition: all 2s;
+					    -webkit-transition: all 2s;
+					    -moz-transition: all 2s;
+					    -ms-transition: all 2s;
+					    -o-transition: all 2s;
+					}
+				}
+			}
+		}
+		.video-play-icon{
+			a{
+				position: absolute;
+			    top: 45%;
+			    left: 0;
+			    right: 0;
+			    text-align: center;
+			    margin: 0 auto;
+			    z-index: 1;
+			    .ripple-effect{
+			    	position: relative;
+			    	display: inline-block;
+			    	&:after{
+			    		content: '';
+					    display: block;
+					    position: absolute;
+					    top: 0;
+					    right: 0;
+					    bottom: 0;
+					    left: 0;
+					    border-radius: 50%;
+					    border: 1px solid $brand-third;
+					    -webkit-animation: ripple 2s linear infinite;
+					    animation: ripple 2s linear infinite;
+					    transition: all .4s ease-in-out;
+			    	}
+			    	i{
+			    		font-size: 80px;
+    					line-height: 70px;
+    					color: $brand-third;
+			    	}
+			    }
+			}
+		}
+	}
+	.text-wrapper{
+		text-align: center;
+		@media(max-width: 767px){
+			margin-bottom: 30px;
+		}
+		.list-Aboutus-info{
+		    margin-bottom: 25px;
+			p{
+		    	font-size: 15px;
+			    line-height: 24px;
+			    color: #666;
+			    margin-bottom: 15px;
+			    &:last-child{
+			    	margin-bottom:0;
+			    }
+			}
+		}
+		.story-btn{
+			display: block;
+			a{
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+@keyframes ripple {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+	75% {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+		opacity: 1
+	}
+	100% {
+		-webkit-transform: scale(1.75);
+		transform: scale(1.75);
+		opacity: 0
+	}
+}

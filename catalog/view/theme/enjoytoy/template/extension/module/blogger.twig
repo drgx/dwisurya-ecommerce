@@ -1,0 +1,81 @@
+<section class="smartblog_block clearfix" style="background: {{ bg_color }};">
+<div class="container">
+	<div class="row"> 
+		<div class="subtitle">{{ subtitle }}</div>
+		<h3 class="home-title">{{ heading }}</h3>
+			<div id="smartblog-carousel" class="owl-carousel">
+				{% set counter = 1 %}
+				{% set lastproduct = blogs|length %}
+				{% for blog in blogs %}			
+					<div class="item sds_blog_post">
+						<div class="blog_post">
+							{% if  counter%2 == 0 %}
+								<div class="blog_content">	
+									<h4 class="blog_title"><a href="{{ blog.href }}">{{ blog.title }}</a> </h4>			
+									<div class="blog-desc"> {{ blog.description }} </div>
+									<div class="view-blog">
+										<a href="{{ blog.href }}" class="btn-primary">{{ text_read_more }}</a></div>
+								</div>
+							{% endif %}
+							<div class="img-border">
+								<div class="news_module_image_holder">
+									{% if blog.image %} 
+									<a href="{{ blog.href }}">
+										<img src="{{ blog.image }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-responsive" />
+										<div class="blog-hover"></div>
+									</a>
+									<a class="blogicons icon readmore_link" title="Click to view Read More " href="{{ blog.href }}"><i class="fa fa-link"></i></a>
+									{% endif %}
+									<div class="hover-date">
+										<div class="date-time">
+											<span class="date_date">{{ blog.date_added }}</span>
+											<span class="date_month">{{ blog.month_added }}</span>
+										</div>	
+									</div>
+									<div class="write-comment"><a href="{{ blog.href }}">{{ blog.total_comments }} {{ entry_comment }}</a></div>						
+								</div>
+							</div>
+							{% if counter%2 == 1  %}
+								<div class="blog_content ">	
+									<h4 class="blog_title"><a href="{{ blog.href }}">{{ blog.title }}</a> </h4>			
+									<div class="blog-desc"> {{ blog.description }} </div>
+									<div class="view-blog">
+										<a href="{{ blog.href }}" class="btn-primary">{{ text_read_more }}</a></div>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+		{% set counter = counter+1 %}
+				{% endfor %}
+			</div>
+	</div>
+</div>	
+	<script type="text/javascript">
+		$('.smartblog_block .owl-carousel').owlCarousel({
+			loop:false,
+			nav:{{ navigation }},
+			dots:false,
+			rewind:true,
+			rtl: $('html').attr('dir') == 'rtl'? true : false,
+			navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+			autoplay:false, 
+			responsive:{
+				0: {
+		            items: 1
+		        },
+		        544: {
+		          items: 1
+		        },
+		        768: {
+		          items: 2
+		        },
+		        992: {
+		          items: 2
+		        },
+		        1200: {
+		          items: 3
+		        }
+			}
+		});
+	</script>
+</section>

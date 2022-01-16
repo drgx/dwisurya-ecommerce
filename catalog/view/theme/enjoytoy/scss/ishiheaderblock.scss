@@ -1,0 +1,16 @@
+#ishiheaderblock{
+	padding: 12px 0;
+	line-height: 16px;
+	font-weight: 400;
+	letter-spacing: 0.1px;
+	position: relative;
+	padding-right: 12px;
+	text-transform: capitalize;
+	@media (max-width: 767px) {/* If media is below 768 */
+		display:none;
+	}
+	p{
+		margin: 0;
+		color: $header-top-text-color;
+	}
+}

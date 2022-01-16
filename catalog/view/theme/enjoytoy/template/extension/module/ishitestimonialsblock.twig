@@ -1,0 +1,52 @@
+<div id="{{ random_id }}" class="ishitestimonials clearfix" style="background-image: url({{ bgimage }})">
+		<div  class="ishitestimonials-container" data-source-url="{{ bgimage }}" >
+			<div class="container">
+				{% if subtitle %}
+					<div class="subtitle">{{ subtitle }}</div>
+				{% endif %}
+				{% if title %}
+					<h2 class="home-title">{{ title }}</h2>
+				{% endif %}
+
+
+				<div class="owl-carousel">				
+					{% for ishitestimonial in ishitestimonials %}
+						<div class="item">
+							<div class="user-details">
+								<div class="user-description">
+									{{ ishitestimonial.description }}
+								</div>
+								<div class="user-detail">
+									<span class="user-name">
+										{{ ishitestimonial.username }}
+									</span>
+									<span class="user-designation">
+										{{ ishitestimonial.designation }}
+									</span>
+								</div>
+								<div class="testimonial-img">
+									<img src="{{ ishitestimonial.image }}" alt="{{ ishitestimonial.username }}">
+								</div>
+							</div>
+						</div>
+					{% endfor %}				
+				</div>
+			</div>
+		</div>
+	    <script type="text/javascript">  
+	        $('#{{ random_id }} .owl-carousel').owlCarousel({
+	            loop:true,
+	            nav: true,
+				autoplay:{{ autoplay }},
+	            rtl: $('html').attr('dir') == 'rtl'? true : false,
+	            navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+	            items:1
+	        });
+	         $("#{{ random_id }}").find(".owl-item").each(function(i){var t=$(this).find(".testimonial-img").html(),o=".owl-dot:eq("+i+")";$("#{{ random_id }}").find(".owl-dots").find(o).html(t)});
+	    </script>
+		<style>
+			#{{ random_id }}{
+				background-color: {{ bgcolor }}
+			}
+		</style>
+</div>

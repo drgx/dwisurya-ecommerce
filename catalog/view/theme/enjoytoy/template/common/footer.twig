@@ -1,0 +1,122 @@
+<div id="_mobile_column_left" class="container"></div>
+<div id="_mobile_column_right" class="container"></div>
+<footer id="footer" class="{{ ishome }}">
+  	<div class="footer-container">
+		<div class="container">
+			<div class="row">
+	          	{{ footermiddle }} 
+		        <div class="ishistoreinfoblock col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		            <div id="ishistoreinfo-container" class="ishistoreinfo-inner">
+		              <a href="{{ storehome }}" class="store-logo">
+		              <img src="{{ storelogo }}" alt="footer-logo">
+		              </a>
+		              <div class="store-description">
+		                <p>{{ storecomment }}</p>
+		              </div>
+		            </div>
+		          	{{ footerbefore}}
+		        </div>
+	          	<div class="footer-links">
+			        <section class="information col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
+			            <h5 class="hidden-sm hidden-xs">{{ text_information }}</h5>
+			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#information-container" data-toggle="collapse">
+			              <span class="h3">{{ text_information }}</span>
+			              <span class="navbar-toggler collapse-icons">
+			                <i class="fa fa-angle-down add"></i>
+			                <i class="fa fa-angle-up remove"></i>
+			              </span>
+			            </div>
+			            {% if informations %}
+			            <div id="information-container" class="collapse footer-dropdown">    
+			              <ul class="list-unstyled">
+			               {% for information in informations %}
+			                <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+			                {% endfor %}
+			              </ul>
+			            </div>
+			            {% endif %}
+			      	</section>
+			        <section class="account col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
+			            <h5 class="hidden-sm hidden-xs">{{ text_account }}</h5>
+			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#account-container" data-toggle="collapse">
+			              <span class="h3">{{ text_account }}</span>
+			              <span class="navbar-toggler collapse-icons">
+			                <i class="fa fa-angle-down add"></i>
+			                <i class="fa fa-angle-up remove"></i>
+			              </span>
+			            </div>
+			            <div id="account-container" class="collapse footer-dropdown">
+			              <ul class="list-unstyled">
+			              <li><a href="{{ account }}">{{ text_account }}</a></li>
+			                <li><a href="{{ order }}">{{ text_order }}</a></li>
+			                <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+			                <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+			                <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+			              </ul>
+			            </div>
+			      	</section> 
+					<div class="block-contact col-lg-4 col-md-4 col-sm-12 col-sm-12 footer-block">
+					  	<h5 class="hidden-sm hidden-xs">{{ text_contact }}</h5>
+					  	<div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#contact-info-container" data-toggle="collapse">
+			              <span class="h3">{{ text_contact }}</span>
+			              <span class="navbar-toggler collapse-icons">
+			                <i class="fa fa-angle-down add"></i>
+			                <i class="fa fa-angle-up remove"></i>
+			              </span>
+			            </div>
+						<div id="contact-info-container" class="footer-contact collapse footer-dropdown">
+						{% if storetelephone %}
+							<div class="block phone">
+								<span class="icon phone">{{ text_Phone }} :</span>
+								<div class="content">
+									<a href="#">{{ storetelephone }}</a>
+								</div>
+							</div>
+						{% endif %}
+						{% if storeaddress %}
+							<div class="block address">
+								<span class="icon"> {{ text_address }} :</span>
+								<div class="content">{{ storeaddress }}</div>
+							</div>
+						{% endif %}
+						{% if storefax %}
+							<div class="block fax">
+								<span class="icon"> {{ text_fax }} :</span>
+								<div class="content">{{ storefax }}</div>
+							</div>
+						{% endif %}
+						{% if storeemail %}
+							<div class="block email">
+								<span class="icon"> {{ text_email }} :</span>
+								<div class="content">
+									<a href="mailto:{{ storeemail }}">{{ storeemail }}</a>
+								</div>
+							</div>
+						{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+  		</div>
+ 	</div>
+  <div class="footer-after">
+  	{#<div class="nav-pettern"></div>#}
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <p class="footer-aftertext">{{ powered }}</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">{{ footerafter }}</div>
+        </div>
+    </div>
+  </div>
+  <a id="slidetop" href="#" ></a>
+</footer>
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</body></html>

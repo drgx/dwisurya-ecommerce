@@ -1,0 +1,36 @@
+[30-Dec-2021 10:12:09 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/dwisurya/new.dwisurya.co.id/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/dwisurya/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/dwisurya/new.dwisurya.co.id/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/dwisurya/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/dwisurya/new.dwisurya.co.id/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/dwisurya/new.dwisurya.co.id/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/dwisurya/new.dwisurya.co.id/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#6 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#7 /home/dwisurya/new.dwisurya.co.id/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/admin/controller/marketplace/install.php on line 61
+[30-Dec-2021 10:15:11 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/dwisurya/new.dwisurya.co.id/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/dwisurya/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/dwisurya/new.dwisurya.co.id/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/dwisurya/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/dwisurya/new.dwisurya.co.id/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/dwisurya/new.dwisurya.co.id/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/dwisurya/new.dwisurya.co.id/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#6 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#7 /home/dwisurya/new.dwisurya.co.id/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/admin/controller/marketplace/install.php on line 61
+[30-Dec-2021 10:16:03 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/dwisurya/new.dwisurya.co.id/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/dwisurya/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/dwisurya/new.dwisurya.co.id/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/dwisurya/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/dwisurya/new.dwisurya.co.id/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/dwisurya/new.dwisurya.co.id/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/dwisurya/new.dwisurya.co.id/system/framework.php(169): Router->dispatch(Object(Action), Object(Action))
+#6 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#7 /home/dwisurya/new.dwisurya.co.id/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/admin/controller/marketplace/install.php on line 61

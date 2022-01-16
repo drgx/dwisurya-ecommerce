@@ -1,0 +1,1895 @@
+@import "permanentvariables";
+* {
+  direction: rtl !important;
+}
+
+main {
+  text-align: right !important;
+}
+
+caption, th, td {
+  text-align: right;
+}
+
+ul, ol {
+    padding-right: 0;
+}
+
+.pull-xs-right, .pull-right {
+  float: left !important;
+}
+.pull-xs-left, .pull-left {
+	float: right !important;
+}
+.text-xs-right{
+  text-align: left!important;
+}
+.text-xs-left{
+  text-align: right!important;
+}
+.text-left {
+	text-align: right;
+}
+.text-right {
+	text-align: left;
+}
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12 {
+	position: relative;
+	// Prevent columns from collapsing when empty
+	min-height: 1px;
+	// Inner gutter via padding
+	padding-left: ($grid-gutter-width / 2);
+	padding-right: ($grid-gutter-width / 2);
+	margin-left: 0;
+}
+
+// Extra small grid
+//
+// Grid classes for extra small devices like smartphones. No offset, push, or
+// pull classes are present here due to the size of the target.
+//
+// Note that `.col-xs-12` doesn't get floated on purpose—there's no need since
+// it's full-width.
+
+@media (min-width: 320px) {
+	.col-xs-1,
+	.col-xs-2,
+	.col-xs-3,
+	.col-xs-4,
+	.col-xs-5,
+	.col-xs-6,
+	.col-xs-7,
+	.col-xs-8,
+	.col-xs-9,
+	.col-xs-10,
+	.col-xs-11 {
+		float: right
+	}
+
+	.col-xs-1 {
+		width: percentage((1 / $grid-columns))
+	}
+	.col-xs-2{
+		width: percentage((2 / $grid-columns))
+	}
+	.col-xs-3{
+		width: percentage((3 / $grid-columns))
+	}
+	.col-xs-4{
+		width: percentage((4 / $grid-columns))
+	}
+	.col-xs-5{
+		width: percentage((5 / $grid-columns))
+	}
+	.col-xs-6{
+		width: percentage((6 / $grid-columns))
+	}
+	.col-xs-7{
+		width: percentage((7 / $grid-columns))
+	}
+	.col-xs-8{
+		width: percentage((8 / $grid-columns))
+	}
+	.col-xs-9{
+		width: percentage((9 / $grid-columns))
+	}
+	.col-xs-10{
+		width: percentage((10/ $grid-columns))
+	}
+	.col-xs-11{
+		width: percentage((11/ $grid-columns))
+	}
+	.col-xs-12{
+		width: 100%
+	}
+}
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+//
+// Note that `.col-sm-12` doesn't get floated on purpose—there's no need since
+// it's full-width.
+
+@media (min-width: 768px) {
+
+	.col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-10,
+	.col-sm-11{
+		float: right
+	}
+	.col-sm-1{
+		width: percentage((1 / $grid-columns))
+	}
+	.col-sm-2{
+		width: percentage((2 / $grid-columns))
+	}
+	.col-sm-3{
+		width: percentage((3 / $grid-columns))
+	}
+	.col-sm-4{
+		width: percentage((4 / $grid-columns))
+	}
+	.col-sm-5{
+		width: percentage((5 / $grid-columns))
+	}
+	.col-sm-6{
+		width: percentage((6 / $grid-columns))
+	}
+	.col-sm-7{
+		width: percentage((7 / $grid-columns))
+	}
+	.col-sm-8{
+		width: percentage((8 / $grid-columns))
+	}
+	.col-sm-9{
+		width: percentage((9 / $grid-columns))
+	}
+	.col-sm-10{
+		width: percentage((10/ $grid-columns))
+	}
+	.col-sm-11{
+		width: percentage((11/ $grid-columns))
+	}
+	.col-sm-12{
+		width: 100%
+	}
+
+	// Push and pull columns for source order changes
+	.col-sm-push-1{
+		right: percentage((1 / $grid-columns))
+	}
+	.col-sm-push-2{
+		right: percentage((2 / $grid-columns))
+	}
+	.col-sm-push-3{
+		right: percentage((3 / $grid-columns))
+	}
+	.col-sm-push-4{
+		right: percentage((4 / $grid-columns))
+	}
+	.col-sm-push-5{
+		right: percentage((5 / $grid-columns))
+	}
+	.col-sm-push-6{
+		right: percentage((6 / $grid-columns))
+	}
+	.col-sm-push-7{
+		right: percentage((7 / $grid-columns))
+	}
+	.col-sm-push-8{
+		right: percentage((8 / $grid-columns))
+	}
+	.col-sm-push-9{
+		right: percentage((9 / $grid-columns))
+	}
+	.col-sm-push-10{
+		right: percentage((10/ $grid-columns))
+	}
+	.col-sm-push-11{
+		right: percentage((11/ $grid-columns))
+	}
+
+	.col-sm-pull-1{
+		left: percentage((1 / $grid-columns))
+	}
+	.col-sm-pull-2{
+		left: percentage((2 / $grid-columns))
+	}
+	.col-sm-pull-3{
+		left: percentage((3 / $grid-columns))
+	}
+	.col-sm-pull-4{
+		left: percentage((4 / $grid-columns))
+	}
+	.col-sm-pull-5{
+		left: percentage((5 / $grid-columns))
+	}
+	.col-sm-pull-6{
+		left: percentage((6 / $grid-columns))
+	}
+	.col-sm-pull-7{
+		left: percentage((7 / $grid-columns))
+	}
+	.col-sm-pull-8{
+		left: percentage((8 / $grid-columns))
+	}
+	.col-sm-pull-9{
+		left: percentage((9 / $grid-columns))
+	}
+	.col-sm-pull-10{
+		left: percentage((10/ $grid-columns))
+	}
+	.col-sm-pull-11{
+		left: percentage((11/ $grid-columns))
+	}
+
+	// Offsets
+	.col-sm-offset-1{
+		margin-right: percentage((1 / $grid-columns))
+	}
+	.col-sm-offset-2{
+		margin-right: percentage((2 / $grid-columns))
+	}
+	.col-sm-offset-3{
+		margin-right: percentage((3 / $grid-columns))
+	}
+	.col-sm-offset-4{
+		margin-right: percentage((4 / $grid-columns))
+	}
+	.col-sm-offset-5{
+		margin-right: percentage((5 / $grid-columns))
+	}
+	.col-sm-offset-6{
+		margin-right: percentage((6 / $grid-columns))
+	}
+	.col-sm-offset-7{
+		margin-right: percentage((7 / $grid-columns))
+	}
+	.col-sm-offset-8{
+		margin-right: percentage((8 / $grid-columns))
+	}
+	.col-sm-offset-9{
+		margin-right: percentage((9 / $grid-columns))
+	}
+	.col-sm-offset-10{
+		margin-right: percentage((10/ $grid-columns))
+	}
+	.col-sm-offset-11{
+		margin-right: percentage((11/ $grid-columns))
+	}
+
+	.col-sm-offset-1,
+	.col-sm-offset-2,
+	.col-sm-offset-3,
+	.col-sm-offset-4,
+	.col-sm-offset-5,
+	.col-sm-offset-6,
+	.col-sm-offset-7,
+	.col-sm-offset-8,
+	.col-sm-offset-9,
+	.col-sm-offset-10,
+	.col-sm-offset-11{
+		margin-left: 0
+	}
+}
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+//
+// Note that `.col-md-12` doesn't get floated on purpose—there's no need since
+// it's full-width.
+@media (min-width: 992px) {
+	.col-md-1,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5,
+	.col-md-6,
+	.col-md-7,
+	.col-md-8,
+	.col-md-9,
+	.col-md-10,
+	.col-md-11{
+		float: right
+	}
+	.col-md-1 {
+		width: percentage((1 / $grid-columns))
+	}
+	.col-md-2 {
+		width: percentage((2 / $grid-columns))
+	}
+	.col-md-3 {
+		width: percentage((3 / $grid-columns))
+	}
+	.col-md-4 {
+		width: percentage((4 / $grid-columns))
+	}
+	.col-md-5 {
+		width: percentage((5 / $grid-columns))
+	}
+	.col-md-6 {
+		width: percentage((6 / $grid-columns))
+	}
+	.col-md-7 {
+		width: percentage((7 / $grid-columns))
+	}
+	.col-md-8 {
+		width: percentage((8 / $grid-columns))
+	}
+	.col-md-9 {
+		width: percentage((9 / $grid-columns))
+	}
+	.col-md-10 {
+		width: percentage((10/ $grid-columns))
+	}
+	.col-md-11 {
+		width: percentage((11/ $grid-columns))
+	}
+	.col-md-12 { 
+		width: 100%
+	}
+
+	// Push and pull columns for source order changes
+	.col-md-push-1 {
+		right: percentage((1 / $grid-columns))
+	}
+	.col-md-push-2 {
+		right: percentage((2 / $grid-columns))
+	}
+	.col-md-push-3 {
+		right: percentage((3 / $grid-columns))
+	}
+	.col-md-push-4 {
+		right: percentage((4 / $grid-columns))
+	}
+	.col-md-push-5 {
+		right: percentage((5 / $grid-columns))
+	}
+	.col-md-push-6 {
+		right: percentage((6 / $grid-columns))
+	}
+	.col-md-push-7 {
+		right: percentage((7 / $grid-columns))
+	}
+	.col-md-push-8 {
+		right: percentage((8 / $grid-columns))
+	}
+	.col-md-push-9 {
+		right: percentage((9 / $grid-columns))
+	}
+	.col-md-push-10 {
+		right: percentage((10/ $grid-columns))
+	}
+	.col-md-push-11 {
+		right: percentage((11/ $grid-columns))
+	}
+
+	.col-md-pull-1 {
+		left: percentage((1 / $grid-columns))
+	}
+	.col-md-pull-2 {
+		left: percentage((2 / $grid-columns))
+	}
+	.col-md-pull-3 {
+		left: percentage((3 / $grid-columns))
+	}
+	.col-md-pull-4 {
+		left: percentage((4 / $grid-columns))
+	}
+	.col-md-pull-5 {
+		left: percentage((5 / $grid-columns))
+	}
+	.col-md-pull-6 {
+		left: percentage((6 / $grid-columns))
+	}
+	.col-md-pull-7 {
+		left: percentage((7 / $grid-columns))
+	}
+	.col-md-pull-8 {
+		left: percentage((8 / $grid-columns))
+	}
+	.col-md-pull-9 {
+		left: percentage((9 / $grid-columns))
+	}
+	.col-md-pull-10 {
+		left: percentage((10/ $grid-columns))
+	}
+	.col-md-pull-11 {
+		left: percentage((11/ $grid-columns))
+	}
+
+	// Offsets
+	.col-md-offset-1 {
+		margin-right: percentage((1 / $grid-columns))
+	}
+	.col-md-offset-2 {
+		margin-right: percentage((2 / $grid-columns))
+	}
+	.col-md-offset-3 {
+		margin-right: percentage((3 / $grid-columns))
+	}
+	.col-md-offset-4 {
+		margin-right: percentage((4 / $grid-columns))
+	}
+	.col-md-offset-5 {
+		margin-right: percentage((5 / $grid-columns))
+	}
+	.col-md-offset-6 {
+		margin-right: percentage((6 / $grid-columns))
+	}
+	.col-md-offset-7 {
+		margin-right: percentage((7 / $grid-columns))
+	}
+	.col-md-offset-8 {
+		margin-right: percentage((8 / $grid-columns))
+	}
+	.col-md-offset-9 {
+		margin-right: percentage((9 / $grid-columns))
+	}
+	.col-md-offset-10 {
+		margin-right: percentage((10/ $grid-columns))
+	}
+	.col-md-offset-11 {
+		margin-right: percentage((11/ $grid-columns))
+	}
+
+	.col-md-offset-1,
+	.col-md-offset-2,
+	.col-md-offset-3,
+	.col-md-offset-4,
+	.col-md-offset-5,
+	.col-md-offset-6,
+	.col-md-offset-7,
+	.col-md-offset-8,
+	.col-md-offset-9,
+	.col-md-offset-10,
+	.col-md-offset-11{
+		margin-left: 0
+	}
+}
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+//
+// Note that `.col-lg-12` doesn't get floated on purpose—there's no need since
+// it's full-width.
+
+@media (min-width: 1200px) {
+
+	.col-lg-1,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5,
+	.col-lg-6,
+	.col-lg-7,
+	.col-lg-8,
+	.col-lg-9,
+	.col-lg-10,
+	.col-lg-11{
+		float: right
+	}
+
+	.col-lg-1 {
+		width: percentage((1 / $grid-columns))
+	}
+	.col-lg-2  {
+		width: percentage((2 / $grid-columns))
+	}
+	.col-lg-3  {
+		width: percentage((3 / $grid-columns))
+	}
+	.col-lg-4  {
+		width: percentage((4 / $grid-columns))
+	}
+	.col-lg-5  {
+		width: percentage((5 / $grid-columns))
+	}
+	.col-lg-6  {
+		width: percentage((6 / $grid-columns))
+	}
+	.col-lg-7  {
+		width: percentage((7 / $grid-columns))
+	}
+	.col-lg-8  {
+		width: percentage((8 / $grid-columns))
+	}
+	.col-lg-9  {
+		width: percentage((9 / $grid-columns))
+	}
+	.col-lg-10 {
+		width: percentage((10/ $grid-columns))
+	}
+	.col-lg-11 {
+		width: percentage((11/ $grid-columns))
+	}
+	.col-lg-12 {
+		width: 100%
+	}
+
+	// Push and pull columns for source order changes
+	.col-lg-push-1 {
+		right: percentage((1 / $grid-columns))
+	}
+	.col-lg-push-2 {
+		right: percentage((2 / $grid-columns))
+	}
+	.col-lg-push-3 {
+		right: percentage((3 / $grid-columns))
+	}
+	.col-lg-push-4 {
+		right: percentage((4 / $grid-columns))
+	}
+	.col-lg-push-5 {
+		right: percentage((5 / $grid-columns))
+	}
+	.col-lg-push-6 {
+		right: percentage((6 / $grid-columns))
+	}
+	.col-lg-push-7 {
+		right: percentage((7 / $grid-columns))
+	}
+	.col-lg-push-8 {
+		right: percentage((8 / $grid-columns))
+	}
+	.col-lg-push-9 {
+		right: percentage((9 / $grid-columns))
+	}
+	.col-lg-push-10 {
+		right: percentage((10/ $grid-columns))
+	}
+	.col-lg-push-11 {
+		right: percentage((11/ $grid-columns))
+	}
+
+	.col-lg-pull-1 {
+		left: percentage((1 / $grid-columns))
+	}
+	.col-lg-pull-2 {
+		left: percentage((2 / $grid-columns))
+	}
+	.col-lg-pull-3 {
+		left: percentage((3 / $grid-columns))
+	}
+	.col-lg-pull-4 {
+		left: percentage((4 / $grid-columns))
+	}
+	.col-lg-pull-5 {
+		left: percentage((5 / $grid-columns))
+	}
+	.col-lg-pull-6 {
+		left: percentage((6 / $grid-columns))
+	}
+	.col-lg-pull-7 {
+		left: percentage((7 / $grid-columns))
+	}
+	.col-lg-pull-8 {
+		left: percentage((8 / $grid-columns))
+	}
+	.col-lg-pull-9 {
+		left: percentage((9 / $grid-columns))
+	}
+	.col-lg-pull-10 {
+		left: percentage((10/ $grid-columns))
+	}
+	.col-lg-pull-11 {
+		left: percentage((11/ $grid-columns))
+	}
+
+	// Offsets
+	.col-lg-offset-1 {
+		margin-right: percentage((1 / $grid-columns))
+	}
+	.col-lg-offset-2 {
+		margin-right: percentage((2 / $grid-columns))
+	}
+	.col-lg-offset-3 {
+		margin-right: percentage((3 / $grid-columns))
+	}
+	.col-lg-offset-4 {
+		margin-right: percentage((4 / $grid-columns))
+	}
+	.col-lg-offset-5 {
+		margin-right: percentage((5 / $grid-columns))
+	}
+	.col-lg-offset-6 {
+		margin-right: percentage((6 / $grid-columns))
+	}
+	.col-lg-offset-7 {
+		margin-right: percentage((7 / $grid-columns))
+	}
+	.col-lg-offset-8 {
+		margin-right: percentage((8 / $grid-columns))
+	}
+	.col-lg-offset-9 {
+		margin-right: percentage((9 / $grid-columns))
+	}
+	.col-lg-offset-10 {
+		margin-right: percentage((10/ $grid-columns))
+	}
+	.col-lg-offset-11 {
+		margin-right: percentage((11/ $grid-columns))
+	}
+
+	.col-lg-offset-1,
+	.col-lg-offset-2,
+	.col-lg-offset-3,
+	.col-lg-offset-4,
+	.col-lg-offset-5,
+	.col-lg-offset-6,
+	.col-lg-offset-7,
+	.col-lg-offset-8,
+	.col-lg-offset-9,
+	.col-lg-offset-10,
+	.col-lg-offset-11 {
+		margin-left: 0
+	}
+}
+
+
+.dropdown-menu {
+	text-align: right;
+	float: right;
+}
+.input-group {
+	.form-control {
+		float: right;
+	}
+}
+.select-wrapper {
+	.form-control {
+		text-align: right;
+	}
+	&:after {
+		right: auto;
+		left: 10px;
+	}
+}
+.form-horizontal {
+	.control-label {
+		@media (min-width: 768px) {/* If media is above 767 */
+			text-align: right;
+		}
+	}
+}
+.checkbox , .radio {
+	label {
+		padding-right: 20px;
+		padding-left: 0;
+	}
+}
+.checkbox-inline, .radio-inline {
+	padding-right: 20px;
+	padding-left: 0;
+}
+.checkbox, .checkbox-inline, .radio, .radio-inline {
+	input[type="checkbox"], input[type="radio"] {
+		margin-right: -20px;
+		margin-left: 0;
+	}
+}
+.header-nav {
+	.left-nav {
+	  @media (max-width: 767px) {/* If media is below 992 */
+		text-align: center;
+	  }
+	  text-align: right;
+	}
+	.right-nav {
+		@media (max-width: 991px) {/* If media is below 992 */
+			text-align: center;
+		}
+		text-align: left;
+		> div{
+			&:last-child{
+				padding-right: 5px;
+				padding-left:0;
+			}
+		}
+		.currency-selector, .language-selector, .user-info {
+			.dropdown-menu {
+				left: 0;
+				right: auto;
+			}
+			li{
+				img{
+					padding-right: 0;
+					padding-left: 8px;
+				}
+				a, button {
+					text-align: right;
+				}
+			}
+		} 
+	}
+}
+.header-top {
+	.desktop-logo{
+	    @media(min-width: 992px) and (max-width: 1199px){
+	      padding-right: 15px;
+	      padding-left: 0;
+	    }
+  	}
+}
+
+.header-right {
+      @media(min-width: 992px) and (max-width: 1199px){
+        padding-right:0;
+        padding-left:15px;
+      }
+      @media (max-width: 991px) {/* If media is below 992 */
+        display: none
+      }
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+    }
+
+  #_desktop_cart {
+	text-align: left;
+  }
+  .blockcart {
+	text-align: right;
+    .cart-content {
+      	.cart-products-count { 
+          right:auto;
+          left:2px;
+          top: 6px;
+          @media (max-width: 991px) {
+            left: 8px;
+            right: auto;
+            top: 10px;
+          }        
+        }
+    }
+    #cart {
+      .cart-dropdown, .dropdown-menu {
+        right: auto;
+        left: 0;
+        text-align: right;
+        @media (max-width: 991px) {/* If media is below 992 */
+        	left: 10px;
+        }
+      }
+    }    
+  }
+.currency-selector, .language-selector {
+	li {
+		.btn-link {
+			text-align: right;
+		}
+	}
+}
+
+#menu-icon	{
+	float: right;
+}
+#_mobile_seach_widget{
+	float: right;
+}
+#_mobile_user_info,  #_mobile_cart, #_mobile_link_menu {
+	float: left;
+}
+
+#mobile_top_menu_wrapper {
+	right: 0;
+	left: auto;
+	#top-menu {
+		> li {
+			text-align: right;
+			i {
+				float: left;
+				
+			}
+		}
+	}
+	.top-menu {
+		.sub-menu {
+			padding: 0 15px 0 0;
+			ul {
+				padding: 0 15px 0 0;
+			}
+		}
+		.navbar-toggler{
+			left: 0;
+			right: auto;
+		}
+	}
+	#top_menu_closer {
+		margin-left: 11px;
+		margin-right: 0;
+		text-align: left;
+	}
+}
+.search-widget { 
+  form {
+    left: 0;
+    right: auto;
+    @media(max-width: 991px){
+      right: 0;
+      left: auto;
+    }
+    input[type="text"] { 
+      padding-left:60px;
+      padding-right: 10px;
+    }
+    .input-group-btn {
+      right: auto;
+      left: 0;
+    }
+    button {
+      right: auto;
+      left: 0;
+      border-radius: 30px 0 0 30px !important;
+    }
+  }
+}
+.ajaxishi-search {
+	ul {
+		li {
+			>div {
+				.product-image {
+					float: right;
+					margin-left: 12px;
+					margin-right: 0;
+				}
+				.product-desc {
+					text-align: right;
+					.product-price {
+						.special {
+							margin-left: 8px;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#ishioffersblock{
+	text-align: right;
+	#typed{
+		margin-right: 5px;
+		margin-left: 0;
+	}
+}
+
+.bannerblock{
+	padding:0 5px;	
+}
+
+.ishislider{
+	.owl-carousel{
+		.owl-nav{
+			.owl-prev{
+				&.ishi-style-nav3,&.ishi-style-nav5{
+					i{
+						&:before{
+							content: "\f104";
+							margin-left: -3px;
+						}
+					}
+				}
+			}
+			.owl-next{
+				&.ishi-style-nav3,&.ishi-style-nav5{
+					i{
+						&:before{
+							content: "\f105";
+							margin-left:3px;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#_desktop_top_menu{
+	.home-title {
+		text-align: right;
+		padding: 15px 45px 15px 15px;		
+	}
+	.wrapper-menu {
+		right: 30px;
+		left: auto;
+		.line-menu {
+			&.start {
+				transform-origin: left;
+			}
+			&.end {
+				transform-origin: right;
+			}
+			&:after {
+				right: 0;
+				left: auto;
+			}
+			&:nth-child(2n+3) {
+				&:after {
+					left: 0;
+					right: auto;
+				}
+			}
+		}
+		&.open {
+			.line-menu {
+				&.start {
+					transform: rotate(90deg) translateX(-3px);
+				}
+				&.end {
+					transform: rotate(90deg) translateX(3px);
+				}
+			}
+		}
+	}
+	#top-menu {
+		> li {
+			text-align: right;
+			a{
+				&:before{
+					left: 0;
+					right: auto;
+				}
+				i{
+					float: left;
+				}
+			}
+			.sub-menu {
+				right:0;
+				left: auto;
+				&.collapse{
+					&:before{
+						right: 40px;
+						left: auto;
+					}
+				}
+				ul[data-depth="1"] > li{
+					text-align: right;
+		            float: right;
+		            > a{
+		            	&:before{
+		            		right:0;
+		            		left: auto;
+		            	}
+		            }
+				}
+				.category_dropdownmenu {
+					&.multiple-dropdown-menu {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#_desktop_link_menu {
+	@media (min-width: 992px) {/* If media is above 991 */
+		float: right;
+	}
+	#header_ishiheaderlinks {
+		.bullet {
+			li {
+				.viewmore {
+					&:before {
+						left: 0;
+						right: auto;
+					}
+				}
+				.headerlink-dropdown {
+					text-align: right;
+					left: 0;
+					right: auto;
+				}
+			}			
+		}
+	}
+}
+
+.blockcart {
+	#cart {
+		.cart-dropdown {
+			left: 0;
+			right: auto;
+		}
+	}
+}
+
+.user-info {
+	.dropdown-menu {
+		left: 0;
+		right: auto;
+	}
+}
+
+.ishitopbannerblock {
+	.bannerblock{
+        &:nth-child(2n+2){
+            .image-container{
+                @media (max-width: 1199px) {
+                    float: right;
+                }
+            }
+        }
+		.image-container {
+            float: left;
+            .banner-btn{
+				right: 38%;
+				left: auto;
+                @media (max-width: 1500px) {
+                    right: 30%;
+                }
+                @media (max-width: 1199px) {
+                    right: 38%;
+                }
+                @media (max-width: 991px) {
+                    right: 33%;
+                }
+                @media (max-width: 767px) {
+                    right: 40%;
+                }
+                @media (max-width: 450px) {
+                    right: 37%;
+                }
+                @media (max-width: 390px) {
+                    right: 34%;
+                }
+            }
+
+		}
+        &.bannerbottom{
+            .image-container{
+                float: right;
+            }
+            .banner-data{
+                float: left;
+            }
+            &:nth-child(2n+3){
+                .image-container{
+                    @media (max-width: 1199px) {
+                        float: left;
+                    }
+                }
+                .banner-data{
+                    float: right;
+                }
+            }
+            &:nth-child(2n+4){
+                .image-container{
+                    @media (max-width: 1199px) {
+                        float: right;
+                    }
+                }
+            }
+        }
+	}
+}
+
+.ishiproductsblock{
+	.ishiproductstab{
+		.nav-item{
+			.nav-link{
+				&:after{
+					left: -16px;
+					right: auto;
+				}
+			}
+		}
+	}
+}
+
+
+.ishiservicesblock {
+	.ishiservices {
+		.services{		
+			.service-block{
+			    text-align: right;
+			    padding-right: 10px;
+			    padding-left: 0;
+			}
+		}
+	}    
+}
+
+.galleryblock{
+	.owl-carousel{
+		.owl-nav{
+			.owl-prev,.owl-next{
+				left: auto;
+				right: 39.2%;
+				@media(max-width: 991px){
+					left: auto;
+					right: 36.2%;
+				}
+				@media(max-width: 767px){
+					left: auto;
+					right: 31.2%;
+				}
+				@media(max-width: 543px){
+					left: auto;
+					right: 21.2%;
+				}
+			}
+			.owl-next{
+				left: 39.2%;
+				right: auto;
+				@media(max-width: 991px){
+					left: 36.2%;
+					right: auto;
+				}
+				@media(max-width: 767px){
+					left: 31.2%;
+					right: auto;
+				}
+				@media(max-width: 543px){
+					left: 21.2%;
+					right: auto;
+				}
+				
+			}
+		}
+	}
+}
+
+.ishitestimonials {  
+  .owl-carousel {
+    .owl-nav {
+      .owl-prev,.owl-next{
+        left: auto;
+        right: 16%;
+      }
+      .owl-next{
+        left: 16%;
+        right: auto;
+      }
+    }
+  }
+  &:hover {
+    .owl-carousel{
+      .owl-nav {
+        @media (min-width: 544px) {/* If media is above 543 */
+            opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+.product-thumb{
+	.button-group{
+		.btn-quickview, .btn-wishlist, .btn-compare{
+			@media (min-width: 768px) {/* If media is above 544 */
+			  opacity: 0;
+			  transform: translateX(-30px);
+			-moz-transform: translateX(-30px);
+			-webkit-transform: translateX(-30px);
+			-o-transform: translateX(-30px);
+			-ms-transform: translateX(-30px);
+			}
+		  }
+	}
+	.outstock-overlay{
+		right:10px;
+		left:auto;
+	}
+}
+
+.ishispecialdeals{
+	.owl-nav{
+		.owl-prev,.owl-next{
+			@media (min-width: 544px) {
+				right: -3px;
+				left: auto;
+			}
+		}
+		.owl-next{
+			left: -3px;
+			right: auto;
+		}
+	}
+  }
+
+
+
+#information-information{
+    #content{
+        ul,ol{
+            margin-bottom: 18px;    
+			padding-left: 0;
+			padding-right: 26px;
+            li{
+				padding-left: 0;
+				padding-right: 3px;
+            }
+        }
+        blockquote{
+            text-align: right;
+			border-right: 3px solid #e5e5e5;
+			border-left: 0;
+			margin-right: 0;
+			margin-left: 15px;
+        }
+    }
+}
+
+
+/* Smart Blog */
+.smartblog_block {
+	.blog_post{
+		.news_module_image_holder {
+			.date-time{
+				left: auto;
+				right: 10px;
+			}
+		}
+	}
+}
+.all-blog {
+	.sdsarticleCat {
+		@media (min-width: 992px) {/* If media is above 991 */
+    		text-align: right;
+    	}
+    }
+}
+.single-blog {
+	#add-comment {
+		.form-horizontal {
+			.control-label {
+    			text-align: right;
+    		}
+    	}
+	}
+	.smartblogcomments {
+		.view-comment {
+				text-align: right;
+			.user_list {
+				text-align: right;
+				margin-right: 10px;
+				margin-left: 0;
+			}
+		}
+	}
+		
+}
+/* Smart Blog End */
+
+.block_newsletter { 
+  .newletter-container{
+    .window{
+      .newsletter-content{
+        .newsletter_text{
+          text-align: right;
+          padding-right: 15px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  #newsletter-container {  
+    .newsletter_form {
+      .btn-submit {
+      	right: auto; 
+        left:3px;
+        border-radius: 30px 0 0 30px;
+      } 
+      .text-email {
+        padding-right: 20px;
+        padding-left: 115px;
+        @media (max-width: 543px) {/* If media is below 544 */
+          padding-right: 20px;
+          padding-left: 110px;
+        }
+      }
+    }
+  } 
+}
+
+#footer {
+	.ishipaymentblock{
+		text-align: left;
+		@media (max-width: 991px) {/* If media is below 992 */
+		  text-align: center;
+		}
+		.item{
+			a{
+				&:hover{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	.block-social{
+		text-align: right;
+		padding-left: 15px;
+		padding-right: 0;
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+	}
+	.ishistoreinfoblock {
+	    .ishistoreinfo-inner {
+			.store-logo{
+				text-align: right;
+				@media(max-width: 991px){
+				  text-align: center;
+				}
+			}
+	      	.store-description{
+			    p{
+		          text-align: right;
+		          	@media(max-width: 991px){
+		            	text-align: center;
+	          		}
+			    }
+	  		}
+	    }
+	}	
+	a {
+		&:after {
+			right: 0;
+			left: auto;
+		}
+	}
+	.services{
+		a{
+		  &:hover{
+			padding-right: 0;
+		  }
+		}
+	  }
+	/* SlideTop */
+	#slidetop {
+		left: 20px;
+		right: auto;
+	}
+	.footer-container {
+		a{
+			&:before{
+				transform: rotate(180deg);
+				float: right;
+			}
+		}
+		.block-contact {
+		  .block{
+		    .content{
+		      margin-right: 10px;
+		      margin-left: 0;
+		      @media (max-width: 991px) {
+		        margin-right: 0px;
+		      }
+		    }
+		  }
+		}
+	}
+	.footer-after {
+		.footer-aftertext {
+			@media (max-width: 991px) {/* If media is below 992 */
+				text-align: center;
+			}
+			text-align: right;
+			a {
+				&:hover {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	.footer-title {
+		.navbar-toggler {
+			left: 0;
+			right: auto;
+		}
+	}
+	.ishipaymentblock{
+		.item{
+			a{
+				&:hover{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+#column-left, #column-right {
+	section{
+		&.ishibannerblock{
+			.bannerblock{
+				float: none;
+			}
+			
+		}
+	}
+	.block-title {
+		.navbar-toggler {
+			left: 15px;
+			right: auto;
+		}
+		.h3 {
+			text-align: right;
+		}
+	}
+	.box {
+		ul {
+			.navbar-toggler {
+				right: auto;
+				left: 15px;
+			}
+		}
+		.category-top-menu {
+			.navbar-toggler {
+				right: auto;
+				left: 15px;
+			}
+		}
+	}
+	.page-title {
+		text-align: right;
+	}
+	.product-thumb {
+		.image {
+			float: right;
+			margin-left: 10px;
+			margin-right: 0;
+		} 
+		.caption {
+			text-align: right;
+		}
+	}
+}
+.refine-search {
+  .category-list {
+    ul {
+      li {
+        &.item {
+          &:nth-child(4n+1) {
+            clear: none;
+            clear: right
+          }
+          @media (max-width: 767px) {/* If media is below 768 */
+            &:nth-child(4n+1) {
+              clear: none;
+            }
+            &:nth-child(3n+1) {
+              clear: none;
+            }
+            &:nth-child(3n+1) {
+              clear: right;
+            }
+          }
+          @media (max-width: 420px) {/* If medias below 420 */
+            &:nth-child(3n+1) {
+              clear: none;
+            }
+            &:nth-child(2n+1) {
+              clear: none;
+            }
+            &:nth-child(2n+1) {
+              clear: right;
+            }
+          }
+        }
+      }
+    }   
+  }
+}
+
+.breadcrumb-container{
+  .page-title{
+    float: right;
+    @media (max-width: 543px) {/* If media is below 992 */
+      float: none;
+    }
+  }
+}
+.breadcrumb {
+  float: left;
+  @media (max-width: 543px) {/* If media is below 992 */
+    float: none;
+  }
+}
+/* Product grid & list */
+
+.product-thumb {
+  .button-group {  
+    left: 10px;
+	right: auto;  
+	@media (max-width: 543px) {
+      left: 5px;
+    }     
+  }
+}
+.product-grid {
+  @media (max-width: 767px) {/* If media is below 768 */
+    width: 50%;
+    float: right;
+  }
+  @media (max-width: 543px) {/* If media is below 544 */
+    padding: 5px;
+  }
+  &:nth-child(3n+1) {
+    clear: right;
+  }
+  @media (max-width: 1199px) {/* If media is below 1200 */
+    &:nth-child(3n+1) {
+      clear: none;
+    }
+    &:nth-child(2n+1) {
+      clear: right;
+    }
+  }
+  @media (max-width: 767px) {/* If media is below 768 */
+    &:nth-child(2n+1) {
+      clear: right;
+    }
+  }
+}
+.product-list {
+	padding: 0;
+	.product-thumb {
+		@media (max-width: 543px) {/* If media is below 544 */
+			text-align: center;
+		}
+		text-align: right;
+		.image {
+			float: right;
+		} 
+		.caption {
+			padding-left: 15px;
+			text-align:right;
+			padding-right: 30px;
+			@media (max-width: 767px) {/* If media is below 768 */
+				width: 50%;
+			}
+			@media (max-width: 543px) {
+				width: 100%;
+				text-align:center;
+				padding: 15px 5px 5px;
+			}
+		}
+	}
+}
+
+.product-list-top {
+	.btn-list-grid {
+		margin-right: 15px;
+		margin-left: 0;
+	}
+	.pagination-right {
+		@media (max-width: 767px) {/* If media is below 768 */
+	       	float: none;	       
+			margin-right: 15px;
+			margin-left: 0;
+	    }
+		float: left;
+		.sort-by-wrapper, .show-wrapper {
+			float: right;
+			margin-left: 15px;
+			margin-right: 0;
+			@media (max-width: 767px) {/* If media is below 768 */
+				float: none;
+			}
+		}
+		.show-wrapper {		
+	      @media (max-width: 543px) {/* If media is below 544 */
+	        margin: 10px 0 0;
+	      }
+		}
+		.sort-by {
+			float: right;
+			margin: 3px 0 0 10px;
+		}
+		.show {
+			@media (max-width: 543px) {/* If media is below 544 */
+				margin: 2px 0 0 10px;
+			}
+    		float: right;
+    	}
+    	.limit {
+    		float: right;
+    	}
+		.select-wrapper {
+			.form-control {
+				text-align: right;
+			}
+			&:after {
+				right: auto;
+				left: 10px;
+			}
+		}	
+	}
+}
+
+.product-image {
+	.image_show {
+		#slider_carousel {
+			.owl-nav {
+				.owl-prev{
+					i{
+						&:before{
+							content: "\f104";
+						}
+					}
+				}
+				.owl-next {
+					i{
+						&:before{
+							content: "\f105";
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.product-right {
+	position: sticky;
+	.rating-wrapper {
+		span {
+			&.fa-stack {
+				margin-left: 3px;
+				margin-right: 0;
+			}
+		}
+	}
+	.countdown-container {
+		margin-right: 0;
+		margin-left: auto;
+	}
+	.list-unstyled {
+		&.attr {
+			li {
+				float: right;
+				border: 1px solid #eee;
+				margin-left: 15px;
+				margin-right: 0;
+				&:nth-child(3n+2),
+				&:nth-child(4n+4) {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	
+	.form-group {
+		.control-label {
+			float: right;
+			margin: 8px 0px 8px 8px;
+		}
+		#input-quantity {
+			margin-left: 6px;
+			margin-right: 0;
+			float: right;
+		}
+		.input-group{
+			&.date{
+				.btn-default{
+					border-radius:30px;
+					border-top-right-radius: 0;
+    				border-bottom-right-radius: 0;
+				}
+			}
+		}
+	}
+	.product_option {
+		@media (min-width: 544px) {
+			/* If media is above 543 */
+			&:nth-child(2n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+.quickview {
+	.quickview-container {
+		.productpage-quickview {
+			.product-left {
+				float: right;
+			}
+			.product-right {
+				float: left;
+			}
+		}
+	}
+}
+
+.tabs_info {
+	.tab-content {
+		text-align: right;
+	}
+	.panel-heading {
+		a {
+			&:after {
+				float: left;
+			}
+		}
+	}
+}
+
+.addthis_toolbox {
+	a {
+		&.addthis_button_facebook_like, &.addthis_button_facebook_send, &.addthis_button_facebook_share, &.addthis_button_foursquare, &.addthis_button_google_plusone, &.addthis_button_linkedin_counter, &.addthis_button_pinterest_pinit, &.addthis_button_stumbleupon_badge, &.addthis_button_tweet {
+    		float: right;
+    	}
+    }
+}
+.addthis_counter {
+	&.addthis_pill_style {
+		a {
+			&.addthis_button_expanded {
+				float: right !important;
+				margin: 0 3px 0 0 !important;
+				padding: 0 4px 0 0 !important;
+			}
+			&.atc_s {
+				float: right !important;
+				padding: 0 20px 0 5px;
+			}
+		}
+	}
+}
+#at15s {
+	text-align: right !important;
+	.at-label {
+	    margin-right: 5px;
+	    margin-left: 0;
+	}
+}
+
+/* Checkout Cart */
+#checkout-cart {
+	.sub-total-table {
+		table-bordered {
+			> tbody {
+				> tr {
+					> td {
+						&.total-amount {
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+	}
+	#accordion {
+		.panel-heading {
+			a {
+				i {
+	    			float: left;
+	    		}
+	    	}
+	    }
+	    .control-label {
+	    	text-align: right;
+	    }
+	}
+}
+#checkout-checkout {
+	#accordion {
+		.panel-default {
+			.panel-heading {
+				.panel-title {
+					a {
+						i {
+							float: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Contact */
+#information-contact {
+	.contact-location {
+		.location-title {
+			i {
+				margin: 10px 0 10px 8px;
+			}
+		}
+	}
+}
+
+/* Owl-Nav */
+.owl-carousel{
+	.owl-nav {
+		.owl-next,.owl-prev {		
+			right: -2px;
+			left: auto;
+			i {
+				&:before {
+					content: "\f105";
+					margin-right: -3px;
+				}
+			}
+		}
+		.owl-next {
+			left: -2px;
+			right: auto;
+			i {
+				&:before {
+					content: "\f104";
+					margin: 0;
+				}
+			}
+		}
+	}
+}

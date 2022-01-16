@@ -1,0 +1,24 @@
+.ishispecial {
+	position: relative;
+	display: block;	
+	text-align: center;
+	> .row{
+		@media (max-width: 543px) {/* If media is below 544 */
+			margin: 0 -10px;
+		}
+	}
+	.home-title{
+		margin-bottom: 15px;
+		@media (max-width: 991px) {/* If media is below 992 */
+			margin-bottom: 5px;
+		}
+		@media (max-width: 543px) {/* If media is below 544 */
+			margin-bottom: 15px;
+		}	
+	}
+	.owl-nav{
+		@media (max-width: 543px) {/* If media is below 544 */
+			margin-top: 10px;
+		}
+	}	
+}

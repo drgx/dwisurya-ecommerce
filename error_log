@@ -1,0 +1,16 @@
+[27-Dec-2021 10:41:31 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_ocar82...', 'gwp8-w!S99', 'dwisurya_ocar82...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_ocar82...', 'gwp8-w!S99', 'dwisurya_ocar82...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[27-Dec-2021 10:41:34 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_ocar82...', 'gwp8-w!S99', 'dwisurya_ocar82...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_ocar82...', 'gwp8-w!S99', 'dwisurya_ocar82...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8

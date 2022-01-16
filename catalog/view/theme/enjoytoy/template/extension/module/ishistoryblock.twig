@@ -1,0 +1,29 @@
+<div class="ishistoryblock" style="margin-bottom:{{marginbottom}}">
+	<div class="container">
+		<div class="row valign-wrapper {{bannerposition}}">
+			<div class="text-wrapper col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="subtitle">{{ subtitle }}</div>
+	    		<h3 class="home-title">{{ title }}</h3> 
+				{{ html }}
+			</div>
+			<div class="story-image col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+				<div class="image-border">
+					<div class="img-container">
+						<a href="#">
+							<img src=" {{bgimage}} " alt="story-img" />
+						</a>
+					</div>
+					{% if videolink != blank %}
+					<div class="video-play-icon">
+			            <a class="video" href="{{ videolink }}">
+			              <span class="ripple-effect">
+			                <i class="fa fa-play-circle" aria-hidden="true"></i>
+			              </span>
+			            </a> 
+		          	</div>
+		          	{% endif %}
+		         </div>
+			</div>			
+		</div>
+	</div>
+</div>

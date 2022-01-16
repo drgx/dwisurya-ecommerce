@@ -1,0 +1,28 @@
+<div id="{{ ishi_randomnumer }}" class="ishibannerblock">
+	{% for banner in banners %}
+		<div class="bannerblock {{ column_class }}">
+			<a href="{{ banner.link }}" class="{{ scale }} banner-scale">
+				<div class="img-border">
+					<div class="image-container">
+						<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive">  
+						{% if banner.showtext == 1 %}
+							<div class="banner-data">
+								<div class="banner-content">      	
+									{% if banner.title %}
+									<div class="banner-title" style="color: {{banner.titlecolor}}">{{ banner.title }}</div>
+									{% endif %}
+									{% if banner.subtitle %}
+									<div class="banner-subtitle" style="color: {{banner.subtitlecolor}};background: {{banner.subtitlebgcolor}}">{{ banner.subtitle }}</div>
+									{% endif %}
+									{% if banner.button_name %}
+									<div class="banner-link" style="color: {{banner.buttoncolor}}">{{ banner.button_name }}</div>
+									{% endif %}
+								</div>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			</a>
+		</div>
+	{% endfor %}
+</div>

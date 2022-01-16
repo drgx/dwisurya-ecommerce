@@ -1,0 +1,46 @@
+<section class="ishiservicesblock clearfix" style="background-image:url( {{ servicebg }} )">
+    <div class="section-header">
+        <div class="subtitle">{{ subtitle }}</div>
+        <h3 class="home-title">{{ title }}</h3>      
+    </div>         
+    <div class="container">
+            <div class="ishiservices row {{bannerposition}}">
+                <div class="services-banner col-md-4 col-sm-12 col-xs-12">
+                    <div class="image-container banner-image"> 
+                        <img src="{{ bgimage }}" class="img-responsive" />
+                    </div>  
+                </div>
+                <div class="left-service col-md-4 col-sm-6 col-xs-6">
+                    {% for ishiservice in leftservices %} 
+                        <div class="services">
+                            <a href="#">
+                                <div class="service-img">
+                                    <span style="background-image: url({{ ishiservice.image }});"></span>
+                                </div>
+                                <div class="service-block">
+                                    <div class="service-title">{{ ishiservice.title }}</div>
+                                    <div class="service-desc">{{ ishiservice.description }}</div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="right-service col-md-4 col-sm-6 col-xs-6">
+                    {% for ishiservice in rightservices %}
+                        <div class="services">
+                            <a href="#">
+                                <div class="service-img">
+                                    <span style="background-image: url({{ ishiservice.image }});"></span>
+                                </div>
+                                <div class="service-block">
+                                    <div class="service-title">{{ ishiservice.title }}</div>
+                                    <div class="service-desc">{{ ishiservice.description }}</div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
