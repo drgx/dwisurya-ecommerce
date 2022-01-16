@@ -10222,3 +10222,11 @@ section {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     -moz-transform: translateY(0); } }
+
+
+    .form-search-new  form {
+      display: flex;
+    }
+    .form-search-new .input-group-btn {
+      display: inline;
+    }
