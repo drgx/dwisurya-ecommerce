@@ -4,7 +4,7 @@
         {# add class name as 'mega-menu' LIKE class="mega-menu" #}
           <ul id="top-menu" class="top-menu" data-depth="0">
            {% if manufactures %}
-            {% set temprand = random(10000) %}
+           {% set temprand = random(10000) %}
               <li class="top_level_category dropdown">
                 <a class="dropdown-item" href="/?route=product/manufacturer">Brand
                 </a>
@@ -16,17 +16,17 @@
                 </span>
                 <div id="top_sub_menu_{{temprand}}" class="dropdown-menu popover sub-menu collapse">
                     <ul class="list-unstyled childs_1 category_dropdownmenu multiple-dropdown-menu" data-depth="1">
-                      {% set temprand = random(10000) %}
+                        {% set temprand2 = random(10000) %}
                         <li class="category dropdown sub-category">
 
                           <a class="dropdown-item dropdown-submenu" href="/?route=product/manufacturer">Brand</a>
                           <span class="pull-xs-right hidden-md hidden-lg">
-                              <span data-target="#top_sub_menu_{{temprand}}" data-toggle="collapse" class="navbar-toggler collapse-icons">
+                              <span data-target="#top_sub_menu_{{temprand2}}" data-toggle="collapse" class="navbar-toggler collapse-icons">
                                 <i class="fa fa-angle-down add"></i>
                                 <i class="fa fa-angle-up remove"></i>
                               </span>
                           </span>
-                          <div id="top_sub_menu_{{temprand}}" class="dropdown-inner collapse">
+                          <div id="top_sub_menu_{{temprand2}}" class="dropdown-inner collapse">
                               <ul class="list-unstyled childs_2 top-menu" data-depth="2">
                               {% for manufacture in manufactures %}
                                 <li class="category">
