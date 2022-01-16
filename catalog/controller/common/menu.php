@@ -71,7 +71,7 @@ class ControllerCommonMenu extends Controller {
 			}
 		}
 
-		$manufacturer = $this->model_catalog_manufacturer->getManufacturer(0);
+		// $manufacturer = $this->model_catalog_manufacturer->getManufacturer(0);
 
 
 		return $this->load->view('common/menu', $data);
