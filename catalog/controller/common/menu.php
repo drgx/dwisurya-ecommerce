@@ -7,8 +7,11 @@ class ControllerCommonMenu extends Controller {
 		$this->load->model('catalog/category');
 
 		$this->load->model('catalog/product');
+		$this->load->model('catalog/manufacturer')
 
 		$data['categories'] = array();
+		$data['manufactures'] = array();
+
 		$data['home'] = $this->url->link('common/home');
 
 		if(!isset($this->request->get['route']) || ($this->request->get['route'] == 'common/home')) {
@@ -66,6 +69,14 @@ class ControllerCommonMenu extends Controller {
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
 				);
 			}
+		}
+
+		foreach ($manufacturer as $manufacture) {
+				$data['manufactures'][] = array(
+					'name'     => $manufacture['name'],
+					'href'     => $this->url->link('product/manufacturer', 'path=' . $manufacture['manufacturer_id'])
+				);
+
 		}
 
 		return $this->load->view('common/menu', $data);
