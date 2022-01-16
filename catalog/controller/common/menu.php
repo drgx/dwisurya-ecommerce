@@ -23,6 +23,7 @@ class ControllerCommonMenu extends Controller {
 		}
 
 		$categories = $this->model_catalog_category->getCategories(0);
+		$manufactures = $this->model_catalog_manufacturer->getManufacturers();
 
 		foreach ($categories as $category) {
 			if ($category['top']) {
