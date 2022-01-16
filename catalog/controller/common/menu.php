@@ -78,7 +78,7 @@ class ControllerCommonMenu extends Controller {
 		foreach ($manufactures as $manufacture) {
 			$data['manufactures'][] = array(
 				'name'     => $manufacture['name'],
-				'href'     => $this->url->link('product/manufacturer', 'path=' . $manufacture['manufacturer_id'])
+				'href'     => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $manufacture['manufacturer_id'])
 			);
 		}
 
