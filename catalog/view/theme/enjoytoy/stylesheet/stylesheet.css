@@ -8727,10 +8727,10 @@ section {
     width: 100%;
     z-index: 99;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
-    animation: slide-down 0.7s;
+    /* animation: slide-down 0.7s;
     -moz-animation: slide-down 0.7s;
     -webkit-animation: slide-down 0.7s;
-    -o-animation: slide-down 0.7s;
+    -o-animation: slide-down 0.7s; */
     overflow: visible; }
   .header-top > .container {
     position: relative; }
