@@ -72,13 +72,7 @@ class ControllerCommonMenu extends Controller {
 		}
 
 		$manufacturer = $this->model_catalog_manufacturer->getManufacturer(0);
-		foreach ($manufacturer as $manufacture) {
-				$data['manufactures'][] = array(
-					'name'     => $manufacture['name'],
-					'href'     => $this->url->link('product/manufacturer', 'path=' . $manufacture['manufacturer_id'])
-				);
 
-		}
 
 		return $this->load->view('common/menu', $data);
 	}
