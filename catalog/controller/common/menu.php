@@ -7,10 +7,11 @@ class ControllerCommonMenu extends Controller {
 		$this->load->model('catalog/category');
 
 		$this->load->model('catalog/product');
-		// $this->load->model('catalog/manufacturer')
+		$this->load->model('catalog/manufacturer');
+
 
 		$data['categories'] = array();
-		// $data['manufactures'] = array();
+
 
 		$data['home'] = $this->url->link('common/home');
 
