@@ -8761,7 +8761,13 @@ section {
         max-width: 100%;
         width: auto;
         text-align: center;
-        margin: 0 auto; } }
+        margin: 0 auto;
+      }
+      #logo {
+        width: auto;
+      }
+  }
+
   @media (max-width: 991px) {
     .header-top .desktop-logo {
       width: 38%;
