@@ -8752,6 +8752,8 @@ section {
       padding-right: 0; } }
   .header-top .desktop-logo img {
     max-width: 100%;
+  }
+  .logo {
     width: 300px;
   }
   @media (max-width: 991px) {
