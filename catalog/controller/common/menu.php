@@ -71,7 +71,7 @@ class ControllerCommonMenu extends Controller {
 			}
 		}
 
-		$manufacturer = $this->model_manufacturer->getManufacturers();
+		$manufacturer = $this->model_catalog_manufacturer->getManufacturers();
 		foreach ($manufacturer as $manufacture) {
 				$data['manufactures'][] = array(
 					'name'     => $manufacture['name'],
