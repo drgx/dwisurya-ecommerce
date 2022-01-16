@@ -18,7 +18,7 @@
                     <ul class="list-unstyled childs_1 category_dropdownmenu single-dropdown-menu" data-depth="1">
                       {% set temprand = random(10000) %}
                         <li class="category dropdown sub-category">
-
+                          <a class="dropdown-item dropdown-submenu" href="{{ child.href }}">{{ child.name }}</a>
                           <span class="pull-xs-right hidden-md hidden-lg">
                               <span data-target="#top_sub_menu_{{temprand}}" data-toggle="collapse" class="navbar-toggler collapse-icons">
                                 <i class="fa fa-angle-down add"></i>
