@@ -30,7 +30,7 @@
 
 
 {% if direction == 'rtl' %}
-  
+
 <link href="catalog/view/theme/{{ activetemplate }}/stylesheet/rtl.css" rel="stylesheet">
 {% endif %}
 
@@ -55,7 +55,7 @@
 {% endfor %}
 </head>
 <body>
-  <main> 
+  <main>
   	<div id="menu_wrapper"></div>
     <header id="header" class="{{ ishome }}">
     	<div class="header-nav">
@@ -66,12 +66,12 @@
 		    	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-12 right-nav">
 		      		<div class="language-selector">{{ language }}</div>
 		      		<div class="currency-selector">{{ currency }}</div>
-		            <div id="_desktop_user_info">  
+		            <div id="_desktop_user_info">
 		              <div class="user-info">
 		                <div class="dropdown">
-		                  <a title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown">    
+		                  <a title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown">
 		                      	<div class="user-logo hidden-lg hidden-md">
-									<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
+									<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 									    <symbol id="user-desktop" viewBox="0 0 480 480"><title>user-desktop</title>
 							              <path d="M187.497,152.427H73.974c-38.111,0-69.117,31.006-69.117,69.117v39.928h251.758v-39.928
 							                 C256.614,183.433,225.608,152.427,187.497,152.427z M241.614,246.473H19.856v-24.928c0-29.84,24.277-54.117,54.117-54.117h113.523
@@ -79,10 +79,10 @@
 							              <path d="M130.735,145.326c40.066,0,72.663-32.597,72.663-72.663S170.802,0,130.735,0S58.072,32.596,58.072,72.663
 							                 S90.669,145.326,130.735,145.326z M130.735,15c31.796,0,57.663,25.867,57.663,57.663s-25.867,57.663-57.663,57.663
 							                 s-57.663-25.868-57.663-57.663S98.939,15,130.735,15z"></path>
-							            </symbol> 
+							            </symbol>
 									</svg>
 								   <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#user-desktop" x="19%" y="22%"></use></svg>
-								</div>      
+								</div>
 		                      <span class="expand-more">{{ text_account }}</span>
 		                      <i class="fa fa-angle-down"></i>
 		                  </a>
@@ -98,10 +98,10 @@
 		                    <li><a href="{{ login }}">{{ text_login }}</a></li>
 		                    <li><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><span class="wishlist-text">{{ text_wishlist }}</span></a></li>
 		                    {% endif %}
-		                  </ul>             
-		                </div>           
-		              </div> 
-		            </div>  
+		                  </ul>
+		                </div>
+		              </div>
+		            </div>
 				 </div>
 			</div>
 			{#<div class="nav-pettern nav-pettern-animation"></div>#}
@@ -109,7 +109,7 @@
 		<div class="header-top-height">
 			<div class="header-top">
 				<div class="container">
-					<div class="row">  
+					<div class="row">
 				        <div class="mobile-width-left col-sm-4 col-xs-3">
 							<div id="menu-icon" class="menu-icon hidden-md hidden-lg">
 						      <div class="nav-icon">
@@ -146,25 +146,27 @@
 	    					<div id="_mobile_user_info"></div>
 						</div>
 						<div class="col-lg-8 col-md-8 col-sm-12 hidden-sm hidden-xs">
-							{{ menu }} 
+							{{ menu }}
 						</div>
 				        <div class="col-md-2 col-lg-2 header-right">
 			        		<div id="_desktop_seach_widget">
 					            <div id="ishisearch_widget" class="search-widget">
 					            	<div class="search-logo hidden-sm hidden-xs">
-										<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">   
-										    <symbol id="magnifying-mobile1" viewBox="0 0 1400 1400"><title>magnifying-mobile</title>
-										      <path d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0
-										           C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586
-										           l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8
-										           c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407
-										           S377.82,467.8,257.493,467.8z"></path>
-										    </symbol>
-									  	</svg>
-									  	<svg class="icon" viewBox="0 0 40 40"><use xlink:href="#magnifying-mobile1" x="25%" y="27%"></use></svg>
-									</div>
+												<form>{{ search }}</form>
+													{# <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+														<symbol id="magnifying-mobile1" viewBox="0 0 1400 1400"><title>magnifying-mobile</title>
+															<path d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0
+																	C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586
+																	l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8
+																	c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407
+																	S377.82,467.8,257.493,467.8z"></path>
+														</symbol>
+													</svg>
+													<svg class="icon" viewBox="0 0 40 40"><use xlink:href="#magnifying-mobile1" x="25%" y="27%"></use></svg> #}
+												</div>
+
 				              		<div class="search-logo hidden-lg hidden-md">
-								  		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">   
+								  		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 							        		<symbol id="magnifying-mobile" viewBox="0 0 1200 1200"><title>magnifying-mobile</title>
 							          			<path d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0
 							               		C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586
@@ -177,8 +179,8 @@
 								  </div>
 					              <form>{{ search }}</form>
 					            </div>
-			    			</div>      
-			    			<div id="_desktop_cart">  
+			    			</div>
+			    			<div id="_desktop_cart">
 					          	<div class="blockcart">
 					            	{{ cart }}
 					          	</div>
@@ -192,18 +194,18 @@
 					    </div>
 					</div>
 				</div>
-			</div>  
+			</div>
 		</div>
-        {{ headerafter }} 
+        {{ headerafter }}
 	      <div class="nav-full-width">
 	        <div class="container wrapper-nav">
-	          <div class="row"> 
+	          <div class="row">
 	          </div>
 	        </div>
 	      </div>
     </header>
-    
-  
+
+
     <div id="spin-wrapper"></div>
 	<div id="siteloader">
 		{% if loader == 'loader_1' %}
@@ -238,7 +240,7 @@
 	</div>
 
 <!-- ======= Quick view JS ========= -->
-<script> 
+<script>
 function quickbox(){
  	if ($(window).width() > 767) {
 		$('.quickview-button').magnificPopup({
@@ -246,8 +248,8 @@ function quickbox(){
 		delegate: 'a',
 		preloader: true,
 		tLoading: 'Loading image #%curr%...',
-		});    
- 	}  
+		});
+ 	}
 }
 jQuery(document).ready(function() {quickbox();});
 jQuery(window).resize(function() {quickbox();});
