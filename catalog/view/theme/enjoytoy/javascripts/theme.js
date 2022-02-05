@@ -214,7 +214,7 @@ function swapChildren(obj1, obj2)
 }
 
 
-$('.top_level_category dropdown').click(function(e){
+$('.top_level_category .dropdown').mouseenter(function(e){
     e.preventDefault();
     $(this).find(".sub-menu").css("visibility", "visible")
 })
