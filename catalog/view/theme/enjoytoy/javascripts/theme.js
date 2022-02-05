@@ -90,7 +90,9 @@ $(document).ready(() => {
     $('.top_level_category > a.dropdown-item').on('click', function(){
         console.log('i got you');
         console.log($(this))
-        $(this).find(".sub-menu").css("visibility", "visible")
+        if ($(this).siblings().length===2) {
+            $($(this).siblings()[1]).css("visibility", "visible");
+        }
     });
 
 
