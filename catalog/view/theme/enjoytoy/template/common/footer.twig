@@ -29,15 +29,17 @@
 			            </div>
 						<div id="contact-info-container" class="footer-contact collapse footer-dropdown">
 						{% if storetelephone %}
-							<div class="block phone">
+							<div class="block phone" style="display: flex; justify-content: left; align-items: flex-start;">
 								<span class="icon phone">{{ text_Phone }} :</span>
 								<div class="content">
 									<a href="#">{{ storetelephone }}</a>
+									<br/>
+									<a href="#">0812 8906 8906</a>
 								</div>
 							</div>
 						{% endif %}
 						{% if storeaddress %}
-							<div class="block address">
+							<div class="block address" style="display: flex; justify-content: left; align-items: flex-start;">
 								<span class="icon"> {{ text_address }} :</span>
 								<div class="content">{{ storeaddress }}</div>
 							</div>
@@ -49,7 +51,7 @@
 							</div>
 						{% endif %}
 						{% if storeemail %}
-							<div class="block email">
+							<div class="block email" style="display: flex; justify-content: left; align-items: flex-start;">
 								<span class="icon"> {{ text_email }} :</span>
 								<div class="content">
 									<a href="mailto:{{ storeemail }}">{{ storeemail }}</a>
