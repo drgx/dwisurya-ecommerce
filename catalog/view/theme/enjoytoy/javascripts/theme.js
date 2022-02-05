@@ -95,7 +95,11 @@ $(document).ready(() => {
     });
 
     $('body').on('click',function(event){
-        $(".sub-menu").removeClass("active-sub-menu");
+        const container = $('.top_level_category > a.dropdown-item');
+        if (!container.has(event.target).length ===0 && container.is(event.target)){
+            $(".sub-menu").removeClass("active-sub-menu");
+        }
+
      });
 
 
