@@ -1780,12 +1780,12 @@ table.table-bordered > tbody > tr > td .btn-primary {
     left: auto; }
   #top-menu > li:hover a {
     color: #000; }
-  #_desktop_top_menu #top-menu > li:hover:hover .sub-menu{
+  /* #_desktop_top_menu #top-menu > li:hover:hover .sub-menu{
     top: 45px;
     visibility: visible;
     transition: all 500ms ease 0s;
     transform: translateY(0px);
-    opacity: 1; }
+    opacity: 1; } */
 
   #_desktop_top_menu #top-menu > li .sub-menu.active-sub-menu {
     top: 45px;

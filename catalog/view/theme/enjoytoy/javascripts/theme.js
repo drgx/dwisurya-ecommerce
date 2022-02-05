@@ -87,12 +87,17 @@ $(document).ready(() => {
         $('.ajaxishi-search').hide();
     });
 
-    $('.top_level_category > a.dropdown-item').on('click', function(){
+    $('.top_level_category > a.dropdown-item').mouseenter( function(){
         console.log('i got you');
         console.log($(this))
         if ($(this).siblings().length===2) {
+            let isOpen = $($(this).siblings()[1]).hasClass('active-sub-menu')
             $(".sub-menu").removeClass("active-sub-menu");
-            $($(this).siblings()[1]).toggleClass("active-sub-menu");
+            if (isOpen) {
+                $($(this).siblings()[1]).removeClass("active-sub-menu");
+            } else {
+                $($(this).siblings()[1]).addClass("active-sub-menu");
+            }
         }
     });
 
