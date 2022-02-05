@@ -48,10 +48,16 @@ class ControllerCommonMenu extends Controller {
 							'filter_sub_category' => true
 						);
 
+
+						if(!empty($childs['name'])) {
+							$image_category = $this->model_tool_image->resize($childs['name'], 200, 200);
+						}else{
+							$image_category = $this->config->get('config_url') . 'image/no_image.png';
+						}
 						$childs_data[] = array(
 							'name'  => $childs['name'],
 							'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'] . '_' . $childs['category_id']),
-							'image' => 'catalog/Toy Icon/Group 7.png'
+							'image' => $image_category
 						);
 					}
 					/* 2 Level Sub Categories END */
