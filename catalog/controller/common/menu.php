@@ -50,7 +50,8 @@ class ControllerCommonMenu extends Controller {
 
 						$childs_data[] = array(
 							'name'  => $childs['name'],
-							'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'] . '_' . $childs['category_id'])
+							'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'] . '_' . $childs['category_id']),
+							'image' => $childs['image']
 						);
 					}
 					/* 2 Level Sub Categories END */
@@ -61,6 +62,7 @@ class ControllerCommonMenu extends Controller {
 						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id']),
 						'column'   => $child['column'] ? $child['column'] : 1,
 						'childs' => $childs_data,
+						'image' => $childs['image']
 					);
 				}
 
@@ -69,7 +71,8 @@ class ControllerCommonMenu extends Controller {
 					'name'     => $category['name'],
 					'children' => $children_data,
 					'column'   => $category['column'] ? $category['column'] : 1,
-					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+					'href'     => $this->url->link('product/category', 'path=' . $category['category_id']),
+					'image' => $childs['image']
 				);
 			}
 		}
