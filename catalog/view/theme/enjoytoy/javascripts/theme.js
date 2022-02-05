@@ -87,6 +87,12 @@ $(document).ready(() => {
         $('.ajaxishi-search').hide();
     });
 
+    $('.top_level_category .dropdown').mouseenter(function(e){
+        e.preventDefault();
+        $(this).find(".sub-menu").css("visibility", "visible")
+    })
+
+
     if (opencart_responsive_mobile) {
         toggleMobileStyles();
     }
@@ -214,10 +220,6 @@ function swapChildren(obj1, obj2)
 }
 
 
-$('.top_level_category .dropdown').mouseenter(function(e){
-    e.preventDefault();
-    $(this).find(".sub-menu").css("visibility", "visible")
-})
 
 function toggleMobileStyles()
 {
