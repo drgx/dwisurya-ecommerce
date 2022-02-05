@@ -1787,7 +1787,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
     transform: translateY(0px);
     opacity: 1; }
 
-  .active-sub-menu {
+  #_desktop_top_menu #top-menu > li .sub-menu.active-sub-menu {
     top: 45px;
     visibility: visible;
     transition: all 500ms ease 0s;
