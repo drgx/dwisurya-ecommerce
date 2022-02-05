@@ -49,8 +49,8 @@ class ControllerCommonMenu extends Controller {
 						);
 
 
-						if(!empty($childs['name'])) {
-							$image_category = $this->model_tool_image->resize($childs['name'], 200, 200);
+						if(!empty($child_2['name'])) {
+							$image_category = $this->model_tool_image->resize($child_2['name'], 200, 200);
 						}else{
 							$image_category = $this->config->get('config_url') . 'image/no_image.png';
 						}
