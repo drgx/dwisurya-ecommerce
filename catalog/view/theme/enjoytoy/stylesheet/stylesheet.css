@@ -8760,6 +8760,7 @@ section {
       padding-right: 0; } }
   .header-top .desktop-logo img {
     max-width: 100%;
+    width: 250px;
   }
   #logo {
     width: 300px;
