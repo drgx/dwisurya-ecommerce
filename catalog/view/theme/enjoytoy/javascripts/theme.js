@@ -87,7 +87,7 @@ $(document).ready(() => {
         $('.ajaxishi-search').hide();
     });
 
-    $('.top_level_category .dropdown').on('click', function(){
+    $('.top_level_category > a.dropdown-item').on('click', function(){
         console.log('i got you');
         console.log($(this))
         $(this).find(".sub-menu").css("visibility", "visible")
