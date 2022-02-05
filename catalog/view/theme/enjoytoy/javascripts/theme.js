@@ -91,7 +91,7 @@ $(document).ready(() => {
         console.log('i got you');
         console.log($(this))
         if ($(this).siblings().length===2) {
-            $($(this).siblings()[1]).css("visibility", "visible");
+            $($(this).siblings()[1]).addClass("active-sub-menu");
         }
     });
 
