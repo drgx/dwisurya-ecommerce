@@ -62,55 +62,7 @@
   <main>
   	<div id="menu_wrapper"></div>
     <header id="header" class="{{ ishome }}">
-    	<div class="header-nav">
-      		<div class="container">
-		      	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xs-12 left-nav">
-		        	{{ headerbefore }}
-		    	</div>
-		    	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-12 right-nav">
-		      		<div class="language-selector">{{ language }}</div>
-		      		<div class="currency-selector">{{ currency }}</div>
-		            <div id="_desktop_user_info">
-		              <div class="user-info">
-		                <div class="dropdown">
-		                  <a title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown">
-		                      	<div class="user-logo hidden-lg hidden-md">
-									<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-									    <symbol id="user-desktop" viewBox="0 0 480 480"><title>user-desktop</title>
-							              <path d="M187.497,152.427H73.974c-38.111,0-69.117,31.006-69.117,69.117v39.928h251.758v-39.928
-							                 C256.614,183.433,225.608,152.427,187.497,152.427z M241.614,246.473H19.856v-24.928c0-29.84,24.277-54.117,54.117-54.117h113.523
-							                 c29.84,0,54.117,24.277,54.117,54.117L241.614,246.473L241.614,246.473z"></path>
-							              <path d="M130.735,145.326c40.066,0,72.663-32.597,72.663-72.663S170.802,0,130.735,0S58.072,32.596,58.072,72.663
-							                 S90.669,145.326,130.735,145.326z M130.735,15c31.796,0,57.663,25.867,57.663,57.663s-25.867,57.663-57.663,57.663
-							                 s-57.663-25.868-57.663-57.663S98.939,15,130.735,15z"></path>
-							            </symbol>
-									</svg>
-								   <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#user-desktop" x="19%" y="22%"></use></svg>
-								</div>
-		                      <span class="expand-more">{{ text_account }}</span>
-		                      <i class="fa fa-angle-down"></i>
-		                  </a>
-		                  <ul class="dropdown-menu">
-		                    {% if logged %}
-		                    <li><a href="{{ account }}">{{ text_account }}</a></li>
-		                    <li><a href="{{ order }}">{{ text_order }}</a></li>
-		                    <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
-		                    <li><a href="{{ download }}">{{ text_download }}</a></li>
-		                    <li><a href="{{ logout }}">{{ text_logout }}</a></li>
-		                    {% else %}
-		                    <li><a href="{{ register }}">{{ text_register }}</a></li>
-		                    <li><a href="{{ login }}">{{ text_login }}</a></li>
-		                    <li><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><span class="wishlist-text">{{ text_wishlist }}</span></a></li>
-		                    {% endif %}
-		                  </ul>
-		                </div>
-		              </div>
-		            </div>
-				 </div>
-			</div>
-			{#<div class="nav-pettern nav-pettern-animation"></div>#}
-		</div>
-		<div class="header-top-height">
+				<div class="header-top-height" style="position:sticky; top:0;">
 			<div class="header-top">
 				<div class="container">
 					<div class="row">
@@ -198,6 +150,55 @@
 				</div>
 			</div>
 		</div>
+    	<div class="header-nav">
+      		<div class="container">
+		      	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xs-12 left-nav">
+		        	{{ headerbefore }}
+		    	</div>
+		    	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-12 right-nav">
+		      		<div class="language-selector">{{ language }}</div>
+		      		<div class="currency-selector">{{ currency }}</div>
+		            <div id="_desktop_user_info">
+		              <div class="user-info">
+		                <div class="dropdown">
+		                  <a title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown">
+		                      	<div class="user-logo hidden-lg hidden-md">
+									<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+									    <symbol id="user-desktop" viewBox="0 0 480 480"><title>user-desktop</title>
+							              <path d="M187.497,152.427H73.974c-38.111,0-69.117,31.006-69.117,69.117v39.928h251.758v-39.928
+							                 C256.614,183.433,225.608,152.427,187.497,152.427z M241.614,246.473H19.856v-24.928c0-29.84,24.277-54.117,54.117-54.117h113.523
+							                 c29.84,0,54.117,24.277,54.117,54.117L241.614,246.473L241.614,246.473z"></path>
+							              <path d="M130.735,145.326c40.066,0,72.663-32.597,72.663-72.663S170.802,0,130.735,0S58.072,32.596,58.072,72.663
+							                 S90.669,145.326,130.735,145.326z M130.735,15c31.796,0,57.663,25.867,57.663,57.663s-25.867,57.663-57.663,57.663
+							                 s-57.663-25.868-57.663-57.663S98.939,15,130.735,15z"></path>
+							            </symbol>
+									</svg>
+								   <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#user-desktop" x="19%" y="22%"></use></svg>
+								</div>
+		                      <span class="expand-more">{{ text_account }}</span>
+		                      <i class="fa fa-angle-down"></i>
+		                  </a>
+		                  <ul class="dropdown-menu">
+		                    {% if logged %}
+		                    <li><a href="{{ account }}">{{ text_account }}</a></li>
+		                    <li><a href="{{ order }}">{{ text_order }}</a></li>
+		                    <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
+		                    <li><a href="{{ download }}">{{ text_download }}</a></li>
+		                    <li><a href="{{ logout }}">{{ text_logout }}</a></li>
+		                    {% else %}
+		                    <li><a href="{{ register }}">{{ text_register }}</a></li>
+		                    <li><a href="{{ login }}">{{ text_login }}</a></li>
+		                    <li><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><span class="wishlist-text">{{ text_wishlist }}</span></a></li>
+		                    {% endif %}
+		                  </ul>
+		                </div>
+		              </div>
+		            </div>
+				 </div>
+			</div>
+			{#<div class="nav-pettern nav-pettern-animation"></div>#}
+		</div>
+
         {{ headerafter }}
 	      <div class="nav-full-width">
 	        <div class="container wrapper-nav">
