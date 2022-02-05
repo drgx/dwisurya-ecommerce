@@ -104,7 +104,7 @@ class Environment
         $this->setLoader($loader);
 
         $options = array_merge([
-            'debug' => true,
+            'debug' => false,
             'charset' => 'UTF-8',
             'base_template_class' => Template::class,
             'strict_variables' => false,
@@ -114,7 +114,6 @@ class Environment
             'optimizations' => -1,
         ], $options);
 
-        // $this->addExtension(new Twig_Extension_Debug());
         $this->debug = (bool) $options['debug'];
         $this->setCharset($options['charset']);
         $this->baseTemplateClass = '\\'.ltrim($options['base_template_class'], '\\');
