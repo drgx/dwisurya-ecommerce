@@ -51,7 +51,7 @@ class ControllerCommonMenu extends Controller {
 						$childs_data[] = array(
 							'name'  => $childs['name'],
 							'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'] . '_' . $childs['category_id']),
-							'image' => $childs['image']
+							'image' => 'catalog/Toy Icon/Group 7.png'
 						);
 					}
 					/* 2 Level Sub Categories END */
