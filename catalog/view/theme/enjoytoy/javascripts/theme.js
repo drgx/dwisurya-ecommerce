@@ -85,6 +85,7 @@ $(document).ready(() => {
 
     $('body').on('click', function () {
         $('.ajaxishi-search').hide();
+        $(".sub-menu").removeClass("active-sub-menu");
     });
 
     $('.top_level_category > a.dropdown-item').mouseenter( function(){
@@ -93,14 +94,6 @@ $(document).ready(() => {
             $($(this).siblings()[1]).addClass("active-sub-menu");
         }
     });
-
-    $('body').on('click',function(event){
-        const container = $('.top_level_category > a.dropdown-item');
-        if (!container.has(event.target).length ===0 && container.is(event.target)){
-            $(".sub-menu").removeClass("active-sub-menu");
-        }
-
-     });
 
 
     if (opencart_responsive_mobile) {
