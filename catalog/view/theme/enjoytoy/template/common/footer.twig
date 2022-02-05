@@ -4,7 +4,7 @@
   	<div class="footer-container">
 		<div class="container">
 			<div class="row">
-	          	{{ footermiddle }} 
+	          	{{ footermiddle }}
 		        <div class="ishistoreinfoblock col-lg-4 col-md-4 col-sm-12 col-xs-12">
 		            <div id="ishistoreinfo-container" class="ishistoreinfo-inner">
 		              <a href="{{ storehome }}" class="store-logo">
@@ -16,7 +16,7 @@
 		            </div>
 		          	{{ footerbefore}}
 		        </div>
-	          	<div class="footer-links">
+	          	<div class="footer-links 22">
 			        <section class="information col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
 			            <h5 class="hidden-sm hidden-xs">{{ text_information }}</h5>
 			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#information-container" data-toggle="collapse">
@@ -27,7 +27,7 @@
 			              </span>
 			            </div>
 			            {% if informations %}
-			            <div id="information-container" class="collapse footer-dropdown">    
+			            <div id="information-container" class="collapse footer-dropdown">
 			              <ul class="list-unstyled">
 			               {% for information in informations %}
 			                <li><a href="{{ information.href }}">{{ information.title }}</a></li>
@@ -54,7 +54,7 @@
 			                <li><a href="{{ contact }}">{{ text_contact }}</a></li>
 			              </ul>
 			            </div>
-			      	</section> 
+			      	</section>
 					<div class="block-contact col-lg-4 col-md-4 col-sm-12 col-sm-12 footer-block">
 					  	<h5 class="hidden-sm hidden-xs">{{ text_contact }}</h5>
 					  	<div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#contact-info-container" data-toggle="collapse">
