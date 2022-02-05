@@ -62,6 +62,7 @@ class ControllerCommonMenu extends Controller {
 						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id']),
 						'column'   => $child['column'] ? $child['column'] : 1,
 						'childs' => $childs_data,
+						'image' => 'catalog/Toy Icon/Group 7.png'
 					);
 				}
 
@@ -71,6 +72,7 @@ class ControllerCommonMenu extends Controller {
 					'children' => $children_data,
 					'column'   => $category['column'] ? $category['column'] : 1,
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id']),
+					'image' => 'catalog/Toy Icon/Group 7.png'
 				);
 			}
 		}
