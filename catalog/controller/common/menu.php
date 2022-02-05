@@ -66,6 +66,8 @@ class ControllerCommonMenu extends Controller {
 					);
 				}
 
+
+
 				// Level 1
 				$data['categories'][] = array(
 					'name'     => $category['name'],
@@ -85,8 +87,7 @@ class ControllerCommonMenu extends Controller {
 			);
 		}
 
-
-		var_dump($categories);exit;
+		var_dump($data);exit;
 		return $this->load->view('common/menu', $data);
 	}
 }
