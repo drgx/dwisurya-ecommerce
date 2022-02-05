@@ -87,7 +87,7 @@ class ControllerCommonMenu extends Controller {
 			);
 		}
 
-		var_dump($data);exit;
+		// var_dump($data);exit;
 		return $this->load->view('common/menu', $data);
 	}
 }
