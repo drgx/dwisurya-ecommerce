@@ -100,9 +100,9 @@ $(document).ready(() => {
     });
 
     //fixed header
-    $(window).scroll(function(){
-         adjustFixedHeader();
-    });
+    // $(window).scroll(function(){
+    //      adjustFixedHeader();
+    // });
 
     $('.video').magnificPopup({
         type: 'iframe',
