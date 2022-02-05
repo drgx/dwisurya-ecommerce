@@ -2,7 +2,7 @@
 var opencart_responsive_current_width = window.innerWidth;
 var opencart_responsive_min_width = 992;
 var opencart_responsive_mobile = opencart_responsive_current_width < opencart_responsive_min_width;
-var header_link_default = $('#_desktop_link_menu').html(); 
+var header_link_default = $('#_desktop_link_menu').html();
 
 $(document).ready(() => {
 
@@ -34,9 +34,9 @@ $(document).ready(() => {
     });
 
     $('#slidetop').click(function(e) {
-        e.preventDefault();     
+        e.preventDefault();
         $('html, body').animate({scrollTop: 0}, 800);
-    });   
+    });
 
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
     if(!isMobile) {
@@ -59,7 +59,7 @@ $(document).ready(() => {
             ;
         });
     }
-    
+
     $(".banner-subtitle").html(function () { var t = $(this).text().trim().split(" "), i = t.shift(); return (t.length > 0 ? "<span>" + i + "</span> " : i) + t.join(" ") });
 
     $('#menu-icon').on('click', function () {
@@ -82,15 +82,15 @@ $(document).ready(() => {
         });
         $('#menu_wrapper').toggleClass('active');
     });
-    
+
     $('body').on('click', function () {
-        $('.ajaxishi-search').hide(); 
+        $('.ajaxishi-search').hide();
     });
 
     if (opencart_responsive_mobile) {
         toggleMobileStyles();
     }
-    
+
     adjustTopMenu();
     adjustFixedHeader();
 
@@ -102,11 +102,11 @@ $(document).ready(() => {
     //fixed header
     $(window).scroll(function(){
          adjustFixedHeader();
-    }); 
+    });
 
     $('.video').magnificPopup({
         type: 'iframe',
-        closeOnBgClick: false, 
+        closeOnBgClick: false,
         iframe: {
             markup: '<div class="mfp-iframe-scaler">'+
             '<div class="mfp-close"></div>'+
@@ -118,15 +118,15 @@ $(document).ready(() => {
             markupParse: function(template, values, item) {
                 values.title = item.el.attr('title');
             }
-        }, 
+        },
         // Delay in milliseconds before popup is removed
         removalDelay: 300,
 
         // Class that is added to popup wrapper and background
         // make it unique to apply your CSS animations just to this exact popup
         mainClass: 'mfp-fade'
-    }); 
-    
+    });
+
     jQuery(".product-list-js .product-layout .image,.product-list-js .product-layout .caption,.ishispecialblock .product-layout,.ishiproductsblock .item,.related-product .item").each(function() {
         var ishicategorytime = $(this).data('countdowntime');
         var ishicategorycontainer = $(this).find('.countdown-container');
@@ -139,7 +139,7 @@ $(document).ready(() => {
     });
 });
 
- 
+
 $(window).on('resize', function() {
     var _cw = opencart_responsive_current_width;
     var _mw = opencart_responsive_min_width;
@@ -150,17 +150,17 @@ $(window).on('resize', function() {
     if (_toggle) {
         toggleMobileStyles();
     }
-});     
+});
 
 function adjustFixedHeader() {
-    var headerHeight = $('#header').height();
-    var navHeight = $('#header').height();
-    if ($(window).scrollTop() > headerHeight) {
-        $('.header-top').addClass('fixed-header');
-    }
-    else {
-        $('.header-top').removeClass('fixed-header');
-    }
+    // var headerHeight = $('#header').height();
+    // var navHeight = $('#header').height();
+    // if ($(window).scrollTop() > headerHeight) {
+    //     $('.header-top').addClass('fixed-header');
+    // }
+    // else {
+    //     $('.header-top').removeClass('fixed-header');
+    // }
 }
 
 function adjustTopMenu() {
@@ -169,7 +169,7 @@ function adjustTopMenu() {
           var subdiv = $(this).find('.sub-menu .category_dropdownmenu').length;
           var submenu = $(this).find('.sub-menu');
           if (subdiv == 1){
-                submenu.css('width','230px');   
+                submenu.css('width','230px');
             }
             else{
                 submenu.css('width',subdiv*200+30+'px');
@@ -195,7 +195,7 @@ function adjustTopMenu() {
           var subdiv = $(this).find('.sub-menu .category_dropdownmenu').length;
           var submenu = $(this).find('.sub-menu');
           if (subdiv == 1){
-                submenu.css('width','auto');   
+                submenu.css('width','auto');
             }
             else{
                 submenu.css('width','auto');
