@@ -1,6 +1,5 @@
 
 {% if categories %}
-  {{dump(categories)}}
     <div id="_desktop_top_menu" class="menu js-top-menu hidden-xs hidden-sm {{ ishome }}">
         {# add class name as 'mega-menu' LIKE class="mega-menu" #}
           <ul id="top-menu" class="top-menu" data-depth="0">
@@ -75,8 +74,7 @@
                             <ul class="list-unstyled childs_2 top-menu" data-depth="2">
                               {% for childs_2 in childs_col %}
                               <li class="category">
-                                {{child_2.image}}
-                                <a class="dropdown-item" href="{{ childs_2.href }}"><img src="{{child_2.image}}" width="20px" height="20px"/> {{ childs_2.name }}</a>
+                                <a class="dropdown-item" href="{{ childs_2.href }}"><img src="/{{child_2.image}}" width="20px" height="20px"/> {{ childs_2.name }}</a>
                               </li>
                               {% endfor %}
                             </ul>
