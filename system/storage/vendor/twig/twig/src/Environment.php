@@ -114,7 +114,7 @@ class Environment
             'optimizations' => -1,
         ], $options);
 
-        $this->addExtension(new Twig_Extension_Debug());
+        // $this->addExtension(new Twig_Extension_Debug());
         $this->debug = (bool) $options['debug'];
         $this->setCharset($options['charset']);
         $this->baseTemplateClass = '\\'.ltrim($options['base_template_class'], '\\');
