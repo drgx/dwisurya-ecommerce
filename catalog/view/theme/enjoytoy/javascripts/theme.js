@@ -88,24 +88,14 @@ $(document).ready(() => {
     });
 
     $('.top_level_category > a.dropdown-item').mouseenter( function(){
-        console.log('i got you');
-        console.log($(this))
         if ($(this).siblings().length===2) {
-            let isOpen = $($(this).siblings()[1]).hasClass('active-sub-menu')
             $(".sub-menu").removeClass("active-sub-menu");
-            if (isOpen) {
-                $($(this).siblings()[1]).removeClass("active-sub-menu");
-            } else {
-                $($(this).siblings()[1]).addClass("active-sub-menu");
-            }
+            $($(this).siblings()[1]).addClass("active-sub-menu");
         }
     });
 
     $('body').on('click',function(event){
-        console.log(event.target);
-        // if(!$(event.target).is('.top_level_category')){
-          $(".sub-menu").removeClass("active-sub-menu");
-        // }
+        $(".sub-menu").removeClass("active-sub-menu");
      });
 
 
