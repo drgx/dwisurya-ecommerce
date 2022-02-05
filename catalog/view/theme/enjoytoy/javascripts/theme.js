@@ -97,9 +97,10 @@ $(document).ready(() => {
     });
 
     $('body').on('click',function(event){
-        if(!$(event.target).is('.top_level_category')){
-          $(".sub-menu").removeClass("active-sub-menu");
-        }
+        console.log(event.target);
+        // if(!$(event.target).is('.top_level_category')){
+        //   $(".sub-menu").removeClass("active-sub-menu");
+        // }
      });
 
 
