@@ -89,6 +89,8 @@ $(document).ready(() => {
 
     $('.top_level_category .dropdown').mouseenter(function(e){
         e.preventDefault();
+        console.log('i got you');
+        console.log($(this))
         $(this).find(".sub-menu").css("visibility", "visible")
     })
 
