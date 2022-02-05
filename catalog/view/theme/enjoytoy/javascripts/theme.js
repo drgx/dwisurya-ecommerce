@@ -91,9 +91,16 @@ $(document).ready(() => {
         console.log('i got you');
         console.log($(this))
         if ($(this).siblings().length===2) {
-            $($(this).siblings()[1]).addClass("active-sub-menu");
+            $(".sub-menu").removeClass("active-sub-menu");
+            $($(this).siblings()[1]).toggleClass("active-sub-menu");
         }
     });
+
+    $('body').on('click',function(event){
+        if(!$(event.target).is('.top_level_category')){
+          $(".sub-menu").removeClass("active-sub-menu");
+        }
+     });
 
 
     if (opencart_responsive_mobile) {
