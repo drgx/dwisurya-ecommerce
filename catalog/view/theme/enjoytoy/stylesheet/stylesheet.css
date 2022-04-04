@@ -1,12 +1,12 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-/* @font-face {
+@font-face {
   font-family: Balsamiq Sans;
-  src: url('../font/Balsamiq Sans.woff');
-} */
+  src: url('../font/Morning-Rainbow-Regular.ttf.woff');
+}
 
 /* menu */
 /*!
