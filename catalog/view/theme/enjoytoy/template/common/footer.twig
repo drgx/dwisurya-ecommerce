@@ -17,7 +17,45 @@
 		          	{{ footerbefore}}
 		        </div> #}
 	          	<div class="footer-links">
-
+      <section class="information col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
+			            <h5 class="hidden-sm hidden-xs">{{ text_information }}</h5>
+			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#information-container" data-toggle="collapse">
+			              <span class="h3">{{ text_information }}</span>
+			              <span class="navbar-toggler collapse-icons">
+			                <i class="fa fa-angle-down add"></i>
+			                <i class="fa fa-angle-up remove"></i>
+			              </span>
+			            </div>
+			            {% if informations %}
+			            <div id="information-container" class="collapse footer-dropdown">
+			              <ul class="list-unstyled">
+			               {% for information in informations %}
+			                <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+			                {% endfor %}
+											 <li><a href="/blogs">Blog</a></li>
+			              </ul>
+			            </div>
+			            {% endif %}
+			      	</section>
+			        <section class="account col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
+			            <h5 class="hidden-sm hidden-xs">{{ text_account }}</h5>
+			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#account-container" data-toggle="collapse">
+			              <span class="h3">{{ text_account }}</span>
+			              <span class="navbar-toggler collapse-icons">
+			                <i class="fa fa-angle-down add"></i>
+			                <i class="fa fa-angle-up remove"></i>
+			              </span>
+			            </div>
+			            <div id="account-container" class="collapse footer-dropdown">
+			              <ul class="list-unstyled">
+			              <li><a href="{{ account }}">{{ text_account }}</a></li>
+			                <li><a href="{{ order }}">{{ text_order }}</a></li>
+			                <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+			                <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+			                <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+			              </ul>
+			            </div>
+			      	</section>
 								<div class="block-contact col-lg-6 col-md-6 col-sm-12 col-sm-12 footer-block">
 					  	<h5 class="hidden-sm hidden-xs">{{ text_contact }}</h5>
 					  	<div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#contact-info-container" data-toggle="collapse">
@@ -60,45 +98,7 @@
 						{% endif %}
 						</div>
 					</div>
-			        <section class="information col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
-			            <h5 class="hidden-sm hidden-xs">{{ text_information }}</h5>
-			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#information-container" data-toggle="collapse">
-			              <span class="h3">{{ text_information }}</span>
-			              <span class="navbar-toggler collapse-icons">
-			                <i class="fa fa-angle-down add"></i>
-			                <i class="fa fa-angle-up remove"></i>
-			              </span>
-			            </div>
-			            {% if informations %}
-			            <div id="information-container" class="collapse footer-dropdown">
-			              <ul class="list-unstyled">
-			               {% for information in informations %}
-			                <li><a href="{{ information.href }}">{{ information.title }}</a></li>
-			                {% endfor %}
-											 <li><a href="/blogs">Blog</a></li>
-			              </ul>
-			            </div>
-			            {% endif %}
-			      	</section>
-			        <section class="account col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
-			            <h5 class="hidden-sm hidden-xs">{{ text_account }}</h5>
-			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#account-container" data-toggle="collapse">
-			              <span class="h3">{{ text_account }}</span>
-			              <span class="navbar-toggler collapse-icons">
-			                <i class="fa fa-angle-down add"></i>
-			                <i class="fa fa-angle-up remove"></i>
-			              </span>
-			            </div>
-			            <div id="account-container" class="collapse footer-dropdown">
-			              <ul class="list-unstyled">
-			              <li><a href="{{ account }}">{{ text_account }}</a></li>
-			                <li><a href="{{ order }}">{{ text_order }}</a></li>
-			                <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-			                <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
-			                <li><a href="{{ contact }}">{{ text_contact }}</a></li>
-			              </ul>
-			            </div>
-			      	</section>
+
 
 				</div>
 			</div>
