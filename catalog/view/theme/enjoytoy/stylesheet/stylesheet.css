@@ -1210,7 +1210,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
 
 #footer {
   margin-top: 30px;
-  background: #faf4f2 url("https://www.dwisurya.co.id/image/catalog/footer-background.png") no-repeat bottom;
+  background: #faf4f2 url("/image/catalog/footer-background.png") no-repeat bottom;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
