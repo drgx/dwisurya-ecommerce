@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'https://new.dwisurya.co.id/');
+define('HTTP_SERVER', 'https://www.dwisurya.co.id/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://new.dwisurya.co.id/');
+define('HTTPS_SERVER', 'https://www.dwisurya.co.id/');
 
 // DIR
 define('DIR_APPLICATION', '/home/dwisurya/new.dwisurya.co.id/catalog/');

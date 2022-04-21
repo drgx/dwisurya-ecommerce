@@ -14,3 +14,208 @@ Stack trace:
 #3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
 #4 {main}
   thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[05-Feb-2022 12:02:05 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "var_dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('var_dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('var_dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[05-Feb-2022 12:02:47 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#7 /home/ in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[05-Feb-2022 12:02:48 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#7 /home/ in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[05-Feb-2022 12:04:25 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#7 /home/ in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[05-Feb-2022 12:04:26 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#7 /home/ in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[05-Feb-2022 12:04:54 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#7 /home/ in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[05-Feb-2022 12:09:00 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#7 /home/ in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[05-Feb-2022 16:18:12 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "dump" function in "enjoytoy/template/common/menu.twig" at line 3. in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php:746
+Stack trace:
+#0 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(451): Twig\ExpressionParser->getFunctionNodeClass('dump', 3)
+#1 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('dump', 3)
+#2 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(142): Twig\ExpressionParser->parseExpression()
+#5 /home/dwisurya/storage/vendor/twig/twig/src/TokenParser/IfTokenParser.php(39): Twig\Parser->subparse(Array)
+#6 /home/dwisurya/storage/vendor/twig/twig/src/Parser.php(185): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#7 /home/ in /home/dwisurya/storage/vendor/twig/twig/src/ExpressionParser.php on line 746
+[06-Apr-2022 03:29:38 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[06-Apr-2022 03:29:39 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[06-Apr-2022 03:29:41 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[06-Apr-2022 03:29:43 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[07-Apr-2022 09:04:49 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[07-Apr-2022 09:05:15 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[08-Apr-2022 11:49:03 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[08-Apr-2022 11:49:06 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[08-Apr-2022 11:49:28 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[08-Apr-2022 11:49:56 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24576 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 47
+[11-Apr-2022 03:14:31 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 96000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 03:43:10 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 03:45:23 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 04:22:02 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 96000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 04:28:05 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 04:28:07 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 06:45:22 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 06:45:24 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 06:46:56 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 06:46:57 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 06:47:53 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 06:47:54 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:08:23 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:08:24 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:08:25 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:08:26 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:11:30 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 75000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:12:28 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:12:30 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:14:15 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:14:16 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:14:23 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:16:18 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[11-Apr-2022 07:16:19 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 01:56:44 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 04:26:42 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 04:26:43 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:16:27 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:16:28 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:33:14 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:33:16 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:36:02 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:36:04 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:36:04 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:36:06 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:40:31 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:40:32 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:45:55 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 06:45:56 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 07:03:20 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 07:03:24 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 07:03:53 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 07:03:54 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[12-Apr-2022 07:34:47 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[13-Apr-2022 01:17:09 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[13-Apr-2022 01:17:11 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[13-Apr-2022 01:17:12 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[13-Apr-2022 01:17:12 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[13-Apr-2022 09:21:34 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[13-Apr-2022 09:21:35 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[14-Apr-2022 06:53:27 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[14-Apr-2022 06:53:28 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[14-Apr-2022 06:53:30 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[14-Apr-2022 06:54:52 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[14-Apr-2022 06:54:54 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[15-Apr-2022 15:10:27 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 75000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[15-Apr-2022 15:10:34 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[15-Apr-2022 15:10:46 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[15-Apr-2022 15:11:23 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
+[15-Apr-2022 15:13:52 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[15-Apr-2022 15:13:55 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[15-Apr-2022 15:14:50 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[15-Apr-2022 15:14:51 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[15-Apr-2022 15:15:31 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[15-Apr-2022 15:15:32 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[15-Apr-2022 15:15:32 UTC] PHP Fatal error:  Uncaught Error: Class 'MySQLi' not found in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php:8
+Stack trace:
+#0 /home/dwisurya/new.dwisurya.co.id/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#1 /home/dwisurya/new.dwisurya.co.id/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'dwisurya_db_adm...', ',Xa?6415.(vG', 'dwisurya_openca...', '3306')
+#2 /home/dwisurya/new.dwisurya.co.id/system/startup.php(104): require_once('/home/dwisurya/...')
+#3 /home/dwisurya/new.dwisurya.co.id/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/dwisurya/new.dwisurya.co.id/system/library/db/mysqli.php on line 8
+[15-Apr-2022 15:15:54 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 100000000 bytes) in /home/dwisurya/new.dwisurya.co.id/system/library/image.php on line 45
