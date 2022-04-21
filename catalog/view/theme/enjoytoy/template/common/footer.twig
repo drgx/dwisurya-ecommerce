@@ -66,6 +66,12 @@
 			              </span>
 			            </div>
 						<div id="contact-info-container" class="footer-contact collapse footer-dropdown">
+										{% if storeaddress %}
+							<div class="block address" style="display: flex; justify-content: left; align-items: flex-start;">
+								<span class="icon"> {{ text_address }} </span>
+								<div class="content">{{ storeaddress }}</div>
+							</div>
+						{% endif %}
 						{% if storetelephone %}
 							<div class="block phone" style="display: flex; justify-content: left; align-items: flex-start;">
 								<span class="icon phone">{{ text_Phone }} </span>
@@ -80,18 +86,6 @@
 									<a href="#">{{ storetelephone }}</a>
 								</div>
 							</div>
-						{% if storeaddress %}
-							<div class="block address" style="display: flex; justify-content: left; align-items: flex-start;">
-								<span class="icon"> {{ text_address }} </span>
-								<div class="content">{{ storeaddress }}</div>
-							</div>
-						{% endif %}
-						{% if storefax %}
-							<div class="block fax">
-								<span class="icon"> {{ text_fax }} :</span>
-								<div class="content">{{ storefax }}</div>
-							</div>
-						{% endif %}
 						{% if storeemail %}
 							<div class="block email" style="display: flex; justify-content: left; align-items: flex-start;">
 								<span class="icon"> {{ text_email }} </span>
@@ -100,6 +94,13 @@
 								</div>
 							</div>
 						{% endif %}
+						{% if storefax %}
+							<div class="block fax">
+								<span class="icon"> {{ text_fax }} :</span>
+								<div class="content">{{ storefax }}</div>
+							</div>
+						{% endif %}
+
 						<div class="block" style="display: flex; justify-content: left; align-items: flex-start;">
 								<span class="icon"> Office Hour </span>
 								<div class="content">
