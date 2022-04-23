@@ -68,27 +68,41 @@
 						<div id="contact-info-container" class="footer-contact collapse footer-dropdown">
 										{% if storeaddress %}
 							<div class="block address" style="display: flex; justify-content: left; align-items: flex-start;">
-								<span class="icon"> {{ text_address }} </span>
+								<span class="icon">
+								 {# {{ text_address }}  #}
+								 <img src="/image/catalog/Footer/Alamat.png" width="100px" height="100px" />
+								 </span>
 								<div class="content">{{ storeaddress }}</div>
 							</div>
 						{% endif %}
 						{% if storetelephone %}
 							<div class="block " style="display: flex; justify-content: left; align-items: flex-start;">
-								<span class="icon phone">{{ text_Phone }} </span>
+								<span class="icon phone">
+								<img src="/image/catalog/Footer/Telpon.png" width="100px" height="100px" />
+
+								{# {{ text_Phone }}  #}
+								</span>
 								<div class="content">
+
 									<a href="#">021- 6015518 , 021- 6123604</a>
 								</div>
 							</div>
 						{% endif %}
 						<div class="block " style="display: flex; justify-content: left; align-items: flex-start;">
-								<span class="icon phone"> Chat </span>
+								<span class="icon phone">
+								{# Chat #}
+								<img src="/image/catalog/Footer/WA.png" width="100px" height="100px" />
+								 </span>
 								<div class="content">
 									<a href="#">{{ storetelephone }}</a>
 								</div>
 							</div>
 						{% if storeemail %}
 							<div class="block email" style="display: flex; justify-content: left; align-items: flex-start;">
-								<span class="icon"> {{ text_email }} </span>
+								<span class="icon">
+								 {# {{ text_email }}  #}
+								 <img src="/image/catalog/Footer/Email.png" width="100px" height="100px" />
+								 </span>
 								<div class="content">
 									<a href="mailto:{{ storeemail }}">{{ storeemail }}</a>
 								</div>
@@ -102,7 +116,10 @@
 						{% endif %}
 
 						<div class="block" style="display: flex; justify-content: left; align-items: flex-start;">
-								<span class="icon"> Office Hour </span>
+								<span class="icon">
+								{# Office Hour #}
+								<img src="/image/catalog/Footer/Office%20Hour.png" width="100px" height="100px" />
+								 </span>
 								<div class="content">
 									Hari Senin - Jumat : PK 08.00 - PK 16.00	</br>
 									Hari Sabtu : PK 08.00 - PK 12.00	</br>
