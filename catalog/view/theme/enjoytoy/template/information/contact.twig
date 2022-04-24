@@ -22,53 +22,54 @@
       <div class="panel panel-default contact-location">
         <div class="panel-body">
           <div class="row">
-            <div class="col-md-6">
-                <div class="col-sm-12 store-address"><div class="location-title"><img src="/image/catalog/Footer/Alamat.png" width="50px" height="50px" />{{ store }}</div>
-                <address class="location-detail">
-                {{ address }}
-                </address>
-              </div>
-              <div class="col-sm-12 store-contact">
-                <div class="location-title">
-                <img src="/image/catalog/Footer/Telpon.png" width="50px" height="50px" /> {{ text_telephone }}</div>
-                <address class="location-detail">
-                {# {{ telephone }} #}
-                021- 6015518 , 021- 6123604
-                </address>
-              </div>
-              <div class="col-sm-12 store-contact">
-                <div class="location-title">
-                <img src="/image/catalog/Footer/WA.png" width="50px" height="50px" /> whatsapp</div>
-                <address class="location-detail">
-                {{ storetelephone }}
-                </address>
-              </div>
-                 <div class="col-sm-12 store-contact">
-                <div class="location-title">
-                <img src="/image/catalog/Footer/Email.png" width="50px" height="50px" /> Telephone</div>
-                <address class="location-detail">
-                <a href="mailto:{{ storeemail }}">{{ storeemail }}</a>
-                </address>
-              </div>
-              <div class="col-sm-12 store-fax">
-                {% if fax %}
-                <div class="location-title"><i class="fa fa-fax"></i>{{ text_fax }}</div>
-                <address class="location-detail">{{ fax }}</address>
-                {% endif %}
-              </div>
-              <div class="col-sm-12 store-status">
-                {% if open %}
-                <div class="location-title"><i class="fa fa-envelope-open-o"></i>{{ text_open }}</div>
-                <address class="location-detail">{{ open }}</address>
-                {% endif %}
-              </div>
-              <div class="col-sm-12 store-comment">
-                {% if comment %}
-                <div class="location-title"><i class="fa fa-comment-o"></i>{{ text_comment }}</div>
-                <address class="location-detail">{{ comment }}</address>
-                {% endif %}
-              </div>
-            </div>
+          <div class="col-md-6">
+          <div id="contact-info-container" class="footer-contact collapse footer-dropdown">
+																	<div class="block address" style="display: flex; justify-content: left; align-items: center;">
+								<span class="icon">
+								 								 <img src="/image/catalog/Footer/Alamat.png" width="50px" height="50px">
+								 </span>
+								<div class="content">Jl. Mangga Dua Abdad, Ruko Bahan Bangunan Blok J/10, Mangga Dua Selatan, Sawah Besar, Jakarta 10730-Indonesia</div>
+							</div>
+																			<div class="block " style="display: flex; justify-content: left; align-items: center;">
+								<span class="icon phone">
+								<img src="/image/catalog/Footer/Telpon.png" width="50px" height="50px">
+
+																</span>
+								<div class="content">
+
+									<a href="#">021- 6015518 , 021- 6123604</a>
+								</div>
+							</div>
+												<div class="block " style="display: flex; justify-content: left; align-items: center;">
+								<span class="icon phone">
+																<img src="/image/catalog/Footer/WA.png" width="50px" height="50px">
+								 </span>
+								<div class="content">
+									<a href="#">(021) 601 5518</a>
+								</div>
+							</div>
+													<div class="block email" style="display: flex; justify-content: left; align-items: center;">
+								<span class="icon">
+								 								 <img src="/image/catalog/Footer/Email.png" width="50px" height="50px">
+								 </span>
+								<div class="content">
+									<a href="mailto:sales@dwisurya.co.id">sales@dwisurya.co.id</a>
+								</div>
+							</div>
+
+						<div class="block" style="display: flex; justify-content: left; align-items: center;">
+								<span class="icon">
+																<img src="/image/catalog/Footer/Office%20Hour.png" width="50px" height="50px">
+								 </span>
+								<div class="content">
+									Hari Senin - Jumat : PK 08.00 - PK 16.00	<br>
+									Hari Sabtu : PK 08.00 - PK 12.00	<br>
+									Hari Merah : Libur	<br>
+								</div>
+							</div>
+						</div>
+          </div>
+
             <div class="col-md-6">
               <div class="map">
                 {% if geocode %}
