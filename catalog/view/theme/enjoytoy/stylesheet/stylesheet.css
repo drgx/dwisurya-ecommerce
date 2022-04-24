@@ -1473,6 +1473,17 @@ table.table-bordered > tbody > tr > td .btn-primary {
     min-width: 60px;
     vertical-align: middle;
     display: inline-block; }
+
+    #contact-info-container .block-contact .block .icon {
+      color: #232323;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      line-height: 20px;
+      min-width: 60px;
+      vertical-align: middle;
+      display: inline-block; }
+
   #footer .block-contact .block .content {
     line-height: 24px;
     overflow: hidden;
