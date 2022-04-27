@@ -6953,11 +6953,11 @@ table.table-bordered > tbody > tr > td .btn-primary {
     vertical-align: middle;
     width: 26px;
     height: 26px;
-    fill: #fff; }
+    fill: #dd0e0a; }
   #ishioffersblock #typed {
     display: inline-block;
     vertical-align: middle;
-    color: #fff;
+    color: #dd0e0a;
     margin-left: 5px;
     font-size: 14px;
     letter-spacing: 0.1px;
@@ -8871,7 +8871,7 @@ section {
   .currency-selector li a:hover, .language-selector li a:hover, .user-info li a:hover, .currency-selector li button:hover, .language-selector li button:hover, .user-info li button:hover {
     color: #000; }
   .currency-selector a, .language-selector a, .user-info a {
-    color: #fff;
+    color: #dd0e0a;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
