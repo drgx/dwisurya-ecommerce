@@ -10238,6 +10238,6 @@ section {
     -moz-transform: translateY(0); } }
 
 
-    .product-layout .btn-quickview, .product-layout .btn-compare {
+    .product-layout .btn-quickview, .product-layout .btn-compare, .product-container .btn-compare , .product-container .btn-quickview{
       display: none !important;
     }
