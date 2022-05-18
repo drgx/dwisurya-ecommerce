@@ -8871,7 +8871,7 @@ section {
   .currency-selector li a:hover, .language-selector li a:hover, .user-info li a:hover, .currency-selector li button:hover, .language-selector li button:hover, .user-info li button:hover {
     color: #000; }
   .currency-selector a, .language-selector a, .user-info a {
-    color: #dd0e0a;
+    color: #222;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
