@@ -1973,7 +1973,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
   @media (min-width: 992px) {
     .search-widget .search-logo {
       stroke-width: 30px;
-      stroke: #fff;
+      stroke: #222;
       width: 55px;
       height: 55px;
       display: inline-block;
@@ -1983,7 +1983,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
       -o-transition: all 0.6s;
       transition: all 0.6s;
       position: relative;
-      fill: #fff; } }
+      fill: #222; } }
   @media (max-width: 1199px) {
     .search-widget .search-logo {
       width: 45px;
@@ -2054,7 +2054,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
     width: auto;
     font-size: 17px;
     font-weight: 400;
-    color: #fff;
+    color: #222;
     padding: 0 18px;
     border-radius: 0 30px 30px 0;
     outline: none;
