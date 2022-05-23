@@ -2003,7 +2003,10 @@ table.table-bordered > tbody > tr > td .btn-primary {
       display: block; } }
   @media (min-width: 992px) {
       .search-widget .search-logo:hover {
-        background-color: #dd0e0a; } }
+        background-color: #dd0e0a;
+        fill: white;
+        stroke: white;
+      } }
   .search-widget form {
     position: absolute;
     right: 0;
