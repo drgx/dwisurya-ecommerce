@@ -248,7 +248,7 @@
           display: none !important; }
         @media (min-width: 768px) {
     .product-thumb .button-group > div button:hover, .product-thumb .button-group > div .quickbox:hover {
-      fill: #fff;
+      fill: white;
       background: #ffea00; } }
     .product-thumb .button-group .btn-quickview, .product-thumb .button-group .btn-wishlist, .product-thumb .button-group .btn-compare {
       /* If media is above 544 */ }
