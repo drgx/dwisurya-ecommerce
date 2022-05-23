@@ -10265,6 +10265,6 @@ section {
   color:white;
 }
 
-#content > div.product_carousel > div.row > div.col-md-6.col-sm-6.product-right > div.form-group > button.btn.btn-default.compare > svg.icon {
+#content > div.product_carousel > div.row > div.col-md-6.col-sm-6.product-right > div.form-group > button.btn.btn-default.compare  {
   display:none;
 }
