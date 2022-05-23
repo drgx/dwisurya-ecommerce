@@ -8995,7 +8995,7 @@ section {
     position: relative; }
   @media (min-width: 992px) {
         .blockcart .cart-link:hover .cart-img {
-          background-color: #ffea00; } }
+          background-color:  #dd0e0a; } }
   @media (min-width: 992px) {
           .blockcart .cart-link:hover .cart-content .cart-products-count {
             background-color: #dd0e0a; } }
@@ -9013,7 +9013,7 @@ section {
     /* If media is below 992 */ }
   @media (min-width: 992px) {
     .blockcart .cart-img {
-      background: #dd0e0a;
+      background: #ffea00;
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
       border: 4px solid #fff;
       border-radius: 50%; } }
@@ -9056,7 +9056,7 @@ section {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    color: #fff;
+    color: #222;
     background-color: #ffea00;
     text-align: center;
     margin: 0 auto;
