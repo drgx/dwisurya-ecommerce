@@ -1287,7 +1287,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
   #footer #slidetop:before {
     content: "\f106";
     display: inline-block;
-    color: #fff;
+    color: #222;
     font-family: FontAwesome;
     font-size: 22px;
     left: 0;
@@ -1584,7 +1584,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
   .owl-carousel .owl-nav .owl-prev:hover i:before, .owl-carousel .owl-nav .owl-next:hover i:before {
     color: #fff; }
   .owl-carousel .owl-nav i:before {
-    color: #fff;
+    color: #222;
     position: relative;
     text-align: center;
     font-size: 19px;
@@ -7807,7 +7807,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
   .ishiproductsblock .ishiproductstab .nav-item:last-child .nav-link:after {
     display: none; }
   .ishiproductsblock .ishiproductstab .nav-item.active .nav-link {
-    color: #fff;
+    color: #222;
     background: #ffea00; }
   .ishiproductsblock .tab-content {
     padding: 0;
