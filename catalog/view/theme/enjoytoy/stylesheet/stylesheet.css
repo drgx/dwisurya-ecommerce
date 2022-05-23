@@ -301,7 +301,7 @@
       text-transform: uppercase;
       background-color: #ffea00;
       border: 3px solid #fff;
-      color: #fff;
+      color: #222;
       outline: none;
       font-size: 15px;
       line-height: 1.42;
@@ -1542,7 +1542,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
     transform: rotate(900deg); }
   .footer-after .footer-aftertext {
     text-align: left;
-    color: #fff;
+    color: #222;
     font-size: 14px;
     margin: 0;
     /* If media is above 991 */ }
@@ -9001,7 +9001,9 @@ section {
           background-color:  #dd0e0a; } }
   @media (min-width: 992px) {
           .blockcart .cart-link:hover .cart-content .cart-products-count {
-            background-color: #dd0e0a; } }
+            background-color: #dd0e0a;
+            color:white;
+          } }
   .blockcart .cart-img {
     width: 55px;
     height: 55px;
@@ -10248,4 +10250,14 @@ section {
 
 .btn-wishlist svg.icon {
   fill:#dd0e0a !important;
+}
+
+#shopping-cart {
+  color:#222;
+  height:26px;
+  margin-top:10px;
+}
+
+#shopping-cart:hover {
+  color:white;
 }
