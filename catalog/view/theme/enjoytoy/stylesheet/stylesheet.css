@@ -2528,9 +2528,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
   @media (max-width: 342px) {
       .product-right .form-group #button-cart {
         padding: 7px 6px; } }
-        .product-right .form-group .compare {
-          display:none;
-        }
+
   .product-right .form-group .wishlist, .product-right .form-group .compare {
 
     /* If media is below 377 */
@@ -10265,4 +10263,8 @@ section {
 
 .blockcart .cart-link:hover .cart-img #shopping-cart {
   color:white;
+}
+
+#content > div.product_carousel > div.row > div.col-md-6.col-sm-6.product-right > div.form-group > button.btn.btn-default.compare > svg.icon {
+  display:none;
 }
