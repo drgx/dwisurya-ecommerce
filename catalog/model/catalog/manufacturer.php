@@ -7,7 +7,7 @@ class ModelCatalogManufacturer extends Model {
 	}
 
 	public function getManufacturers($data = array()) {
-		if ($data) {
+		// if ($data) {
 			$sql = "SELECT * FROM " . DB_PREFIX . "manufacturer m LEFT JOIN " . DB_PREFIX . "manufacturer_to_store m2s ON (m.manufacturer_id = m2s.manufacturer_id) WHERE m2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
 
 			$sort_data = array(
@@ -42,18 +42,18 @@ class ModelCatalogManufacturer extends Model {
 			$query = $this->db->query($sql);
 
 			return $query->rows;
-		} else {
-			$manufacturer_data = $this->cache->get('manufacturer.' . (int)$this->config->get('config_store_id'));
+		// } else {
+		// 	$manufacturer_data = $this->cache->get('manufacturer.' . (int)$this->config->get('config_store_id'));
 
-			if (!$manufacturer_data) {
-				$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "manufacturer m LEFT JOIN " . DB_PREFIX . "manufacturer_to_store m2s ON (m.manufacturer_id = m2s.manufacturer_id) WHERE m2s.store_id = '" . (int)$this->config->get('config_store_id') . "' ORDER BY name");
+		// 	if (!$manufacturer_data) {
+		// 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "manufacturer m LEFT JOIN " . DB_PREFIX . "manufacturer_to_store m2s ON (m.manufacturer_id = m2s.manufacturer_id) WHERE m2s.store_id = '" . (int)$this->config->get('config_store_id') . "' ORDER BY name");
 
-				$manufacturer_data = $query->rows;
+		// 		$manufacturer_data = $query->rows;
 
-				$this->cache->set('manufacturer.' . (int)$this->config->get('config_store_id'), $manufacturer_data);
-			}
+		// 		$this->cache->set('manufacturer.' . (int)$this->config->get('config_store_id'), $manufacturer_data);
+		// 	}
 
-			return $manufacturer_data;
-		}
+		// 	return $manufacturer_data;
+		// }
 	}
 }
