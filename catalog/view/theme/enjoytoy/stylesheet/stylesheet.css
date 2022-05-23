@@ -9264,7 +9264,7 @@ section {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  color: #fff;
+  color: #222;
   background-color: #ffea00;
   border: 3px solid #fff;
   outline: none;
