@@ -2533,7 +2533,7 @@ table.table-bordered > tbody > tr > td .btn-primary {
 
     /* If media is below 377 */
     padding: 0;
-    fill: #fff;
+    fill: #dd0e0a;
     display: inline-block;
     vertical-align: middle;
     height: 36px;
@@ -10267,4 +10267,12 @@ section {
 
 #content > div.product_carousel > div.row > div.col-md-6.col-sm-6.product-right > div.form-group > button.btn.btn-default.compare  {
   display:none;
+}
+
+#content > div.product_carousel > div.row > div.col-md-6.col-sm-6.product-right > div.form-group > button.btn.btn-default.wishlist {
+  background-color:white;
+}
+
+#content > div.product_carousel > div.row > div.col-md-6.col-sm-6.product-right > div.form-group > button.btn.btn-default.wishlist:hover {
+  background-color:white;
 }
