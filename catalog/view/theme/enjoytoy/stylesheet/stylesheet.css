@@ -10258,6 +10258,7 @@ section {
   margin-top:10px;
 }
 
-#shopping-cart:hover {
+
+.blockcart .cart-link:hover .cart-img #shopping-car{
   color:white;
 }
