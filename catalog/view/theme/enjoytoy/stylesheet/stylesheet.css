@@ -228,7 +228,7 @@
         padding: 0;
         fill: #fff;
         border-radius: 50%;
-        background: #dd0e0a;
+        background: white;
         display: inline-block;
         vertical-align: middle;
         -webkit-transition: all 0.5s;
@@ -10241,3 +10241,8 @@ section {
     .product-layout .btn-quickview, .product-layout .btn-compare, .product-container .btn-compare , .product-container .btn-quickview{
       display: none !important;
     }
+
+
+.btn-wishlist svg.icon {
+  fill:#dd0e0a !important;
+}
