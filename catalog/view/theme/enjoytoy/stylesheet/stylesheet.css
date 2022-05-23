@@ -2528,8 +2528,11 @@ table.table-bordered > tbody > tr > td .btn-primary {
   @media (max-width: 342px) {
       .product-right .form-group #button-cart {
         padding: 7px 6px; } }
+        .product-right .form-group .compare {
+          display:none;
+        }
   .product-right .form-group .wishlist, .product-right .form-group .compare {
-    display:none;
+
     /* If media is below 377 */
     padding: 0;
     fill: #fff;
