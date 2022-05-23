@@ -10275,4 +10275,5 @@ section {
 
 #content > div.product_carousel > div.row > div.col-md-6.col-sm-6.product-right > div.form-group > button.btn.btn-default.wishlist:hover {
   background-color:white;
+  fill: #dd0e0a;
 }
