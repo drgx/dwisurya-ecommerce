@@ -32,6 +32,7 @@
 			               {% for information in informations %}
 			                <li><a href="{{ information.href }}">{{ information.title }}</a></li>
 			                {% endfor %}
+											 <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
 											 <li><a href="/blogs">Blog</a></li>
 			              </ul>
 			            </div>
@@ -48,10 +49,28 @@
 			            </div>
 			            <div id="account-container" class="collapse footer-dropdown">
 			              <ul class="list-unstyled">
-			              <li><a href="{{ account }}">{{ text_account }}</a></li>
-			                <li><a href="{{ order }}">{{ text_order }}</a></li>
+			              	<li><a href="{{ account }}">Registration</a></li>
+											<li><a href="{{ account }}">Log In</a></li>
 			                <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-			                <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+											<li><a href="/index.php?route=checkout/cart">Shopping Cart</a></li>
+			                <li><a href="{{ order }}">{{ text_order }}</a></li>
+			              </ul>
+			            </div>
+			      	</section>
+							<section class="account col-lg-2 col-md-2 col-sm-12 col-sm-12 footer-block">
+			            <h5 class="hidden-sm hidden-xs">Info</h5>
+			            <div class="footer-title clearfix  hidden-lg hidden-md collapsed" data-target="#account-container" data-toggle="collapse">
+			              <span class="h3">Info</span>
+			              <span class="navbar-toggler collapse-icons">
+			                <i class="fa fa-angle-down add"></i>
+			                <i class="fa fa-angle-up remove"></i>
+			              </span>
+			            </div>
+			            <div id="account-container" class="collapse footer-dropdown">
+			              <ul class="list-unstyled">
+			              	<li><a href="/payment-method">Payment Method</a></li>
+											<li><a href="/delivery-method">Delivery Method</a></li>
+			                <li><a href="/faq">Question &#38; Answer</a></li>
 			                <li><a href="{{ contact }}">{{ text_contact }}</a></li>
 			              </ul>
 			            </div>
