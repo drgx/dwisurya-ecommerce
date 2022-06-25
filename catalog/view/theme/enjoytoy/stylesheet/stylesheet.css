@@ -6244,16 +6244,16 @@ table.table-bordered > tbody > tr > td .btn-primary {
   .ishislider .owl-carousel .owl-dots .owl-dot span {
     width: 50px;
     height: 3px;
-    border: 1px solid #dd0e0a;
-    background: #dd0e0a;
+    border: 1px solid #ffea00;
+    background: #ffea00;
     margin: 0 3px;
     display: block; }
   @media (max-width: 543px) {
           .ishislider .owl-carousel .owl-dots .owl-dot span {
             width: 40px; } }
   .ishislider .owl-carousel .owl-dots .owl-dot.active span {
-    background: #ffea00;
-    border-color: #ffea00;
+    background: #dd0e0a;
+    border-color: #dd0e0a;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
   .ishislider .owl-carousel .owl-dots.ishi-style-dot1 .owl-dot span {
     border-radius: 0; }
