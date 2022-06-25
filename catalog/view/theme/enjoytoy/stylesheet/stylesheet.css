@@ -10278,3 +10278,8 @@ section {
   background-color:white;
   fill: #dd0e0a;
 }
+
+
+.search-widget .search-logo:hover svg {
+  color:white;
+}
